@@ -1,0 +1,32 @@
+{
+  "proven": [
+    {
+      "value": 80,
+      "suffix": "+",
+      "label": "Satisfied Clients",
+      "featured": true
+    }
+  ],
+  "deep": [
+    {
+      "value": 185,
+      "suffix": "+",
+      "label": "Campaigns Launched"
+    },
+    {
+      "value": 18,
+      "suffix": "+",
+      "label": "Years of Experience"
+    },
+    {
+      "value": 10,
+      "suffix": "+",
+      "label": "Average CIR"
+    },
+    {
+      "value": 100,
+      "suffix": "+",
+      "label": "Millions In Sales"
+    }
+  ]
+}

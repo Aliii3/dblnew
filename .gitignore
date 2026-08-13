@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+.npm/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment secrets (never commit real keys)
+.env
+.env.*
+!.env.example
+
+# Personal Claude Code settings (machine-specific)
+.claude/settings.local.json

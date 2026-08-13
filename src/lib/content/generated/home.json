@@ -1,0 +1,137 @@
+{
+  "fetched_at": "2026-06-07T11:56:25.534Z",
+  "team": [
+    {
+      "name": "Radwa",
+      "image": "/media/team/radwa.png"
+    },
+    {
+      "name": "Nour",
+      "image": "/media/team/nour.png"
+    },
+    {
+      "name": "Abdo",
+      "image": "/media/team/abdo.png"
+    },
+    {
+      "name": "Rodaina",
+      "image": "/media/team/rodaina.png"
+    },
+    {
+      "name": "Lolo",
+      "image": "/media/team/lolo.png"
+    },
+    {
+      "name": "Lenda",
+      "image": "/media/team/lenda.png"
+    },
+    {
+      "name": "Laila",
+      "image": "/media/team/laila.png"
+    },
+    {
+      "name": "Mariam",
+      "image": "/media/team/mariam.png"
+    },
+    {
+      "name": "Bassant",
+      "image": "/media/team/bassant.png"
+    },
+    {
+      "name": "Shrouk",
+      "image": "/media/team/shrouk.png"
+    }
+  ],
+  "clients": [
+    "/media/clients/FVmqnvYOI3Y4uNVqNOSqB5Izak.png",
+    "/media/clients/GqkVRBjRVrYuLfBJEEJFfArxes.png",
+    "/media/clients/oh76Ahmwjefn0XKpodDl2yAn44E.png",
+    "/media/clients/E46KWmdgoYtOJu56riHrVue3xo.png",
+    "/media/clients/kCZVKUHBRm85EDU61Ax33mYdrTw.png",
+    "/media/clients/SXU00AU2gFIudJj2cKuKCRssUaM.png",
+    "/media/clients/zhJnUdLlvWHOokcQDo7f55XBM.png",
+    "/media/clients/8loDBxztljjAqWReOihuqfAAI.png",
+    "/media/clients/OxNEFwVLqzVekRKf0ZzULVeVRM.png",
+    "/media/clients/7mUmefvbqqEur2tDPqWUWkzm1Q.png",
+    "/media/clients/JblLmx3kUH48WtdXwHvUdj3edI0.png",
+    "/media/clients/WQakjqWJVTi6703foxvfgAj0Oc.png",
+    "/media/clients/IEzNPAmU7hScrRAWBnLGcUCw7g.png",
+    "/media/clients/YyXtvAwxSzVL7lH0Fo6FXVepg2k.png",
+    "/media/clients/Yxp3JNTlEq3Q0EJ9foE0QNlnY.png",
+    "/media/clients/co3FeUMtKNr44JgE4T6z41lYE.png",
+    "/media/clients/CLTwqjZEuRq3zFWIFmblGX8j3P8.png",
+    "/media/clients/ibhVBT9CyJYkeU3S1xgOmYojaw.png",
+    "/media/clients/34OHxDLUUhtNY0b4CEDFjlrPsV8.png",
+    "/media/clients/4QcqKDdlM6BqUZRf7DP5QLqgQg.png",
+    "/media/clients/BqYZIQd0myRH2eBJlAzVEYH96o8.png",
+    "/media/clients/naIlI6kpQjDap5iP8uW4rrBbllo.png",
+    "/media/clients/JnU9HgiqMBLi5Pun5ZVO9kVWU0.png",
+    "/media/clients/kIGfHam5ZeSj22rKG4i6u0kFSjI.png",
+    "/media/clients/NlwDRUvc3mUs9ObEYWrvFpSnElA.png"
+  ],
+  "blogCards": [
+    {
+      "tag": "Ecommerce",
+      "title": "From Stage to Backstage: How the Gulf Outpaces Egypt in the E-commerce Play",
+      "image": "/media/blogs/ecommerce.png"
+    },
+    {
+      "tag": "Ramadan Preparation",
+      "title": "An FMCG Guide on How to Capitalize on Ramadan Seasons on E-commerce Platforms",
+      "image": "/media/blogs/ramadan-preparation.png"
+    },
+    {
+      "tag": "Egypt’s Dessert Market",
+      "title": "From Regular Konafa, to ALL THINGS PISTACHIO",
+      "image": "/media/blogs/egypt-dessert-market.png"
+    },
+    {
+      "tag": "iSiS-Organic",
+      "title": "245% growth in e-commerce, 2,740% YOY growth in Amazon Sales",
+      "image": "/media/blogs/isis-organic.png"
+    }
+  ],
+  "reviewsWidgetUrl": "https://widget.getwally.net/67f283bcfe87090014eed6bd?v=2",
+  "teamIntro": [
+    "Our team is a passionate collective of strategists, creators, analysts, and innovators each bringing unique expertise to deliver measurable results.",
+    "Together, we collaborate, challenge, and push boundaries to craft bold ideas and turn them into success stories for our clients."
+  ],
+  "blogPosts": [
+    {
+      "tag": "Ecommerce",
+      "title": "From Stage to Backstage: How the Gulf Outpaces Egypt in the E-commerce Play",
+      "excerpt": "From Stage to Backstage: How the Gulf Outpaces Egypt in the E-commerce Play",
+      "image": "/media/blogs/ecommerce.png",
+      "slug": "ecommerce",
+      "isCaseStudy": false,
+      "caseStudySlug": null
+    },
+    {
+      "tag": "Ramadan Preparation",
+      "title": "An FMCG Guide on How to Capitalize on Ramadan Seasons on E-commerce Platforms",
+      "excerpt": "An FMCG Guide on How to Capitalize on Ramadan Seasons on E-commerce Platforms",
+      "image": "/media/blogs/ramadan-preparation.png",
+      "slug": "ramadan-preparation",
+      "isCaseStudy": false,
+      "caseStudySlug": null
+    },
+    {
+      "tag": "Egypt’s Dessert Market",
+      "title": "From Regular Konafa, to ALL THINGS PISTACHIO",
+      "excerpt": "From Regular Konafa, to ALL THINGS PISTACHIO",
+      "image": "/media/blogs/egypt-dessert-market.png",
+      "slug": "egypt-dessert-market",
+      "isCaseStudy": false,
+      "caseStudySlug": null
+    },
+    {
+      "tag": "iSiS-Organic",
+      "title": "245% growth in e-commerce, 2,740% YOY growth in Amazon Sales",
+      "excerpt": "245% growth in e-commerce, 2,740% YOY growth in Amazon Sales",
+      "image": "/media/blogs/isis-organic.png",
+      "slug": "isis-organic",
+      "isCaseStudy": true,
+      "caseStudySlug": "isis-organic"
+    }
+  ]
+}
