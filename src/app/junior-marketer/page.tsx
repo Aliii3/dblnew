@@ -108,7 +108,7 @@ export default function JuniorMarketerPage() {
           </div>
           <p className="jrm-lead reveal content-prose" style={{ maxWidth: 760, marginTop: "2.25rem" }}>{j.tools}</p>
           <p className="reveal content-prose" style={{ maxWidth: 760, marginTop: "1rem", color: "var(--muted)", lineHeight: 1.8 }}>
-            <strong style={{ color: "#fff" }}>Our mission?</strong> {j.mission}
+            <strong style={{ color: "#0E2154" }}>Our mission?</strong> {j.mission}
           </p>
         </div>
       </section>
