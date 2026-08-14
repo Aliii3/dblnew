@@ -207,36 +207,51 @@ export function useSiteEffects(options?: { home?: boolean }) {
       gsap.registerPlugin(ScrollTrigger);
 
       gsap.utils.toArray<HTMLElement>(".reveal").forEach((el) => {
-        gsap.to(el, {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: { trigger: el, start: "top 88%", toggleActions: "play none none none" },
-        });
+        gsap.fromTo(
+          el,
+          { opacity: 0, y: 40 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+            immediateRender: false,
+            scrollTrigger: { trigger: el, start: "top 88%", toggleActions: "play none none none" },
+          }
+        );
       });
 
       gsap.utils.toArray<HTMLElement>(".reveal-stagger").forEach((container) => {
-        gsap.from(container.children, {
-          opacity: 0,
-          y: 50,
-          duration: 0.8,
-          stagger: 0.12,
-          ease: "power3.out",
-          scrollTrigger: { trigger: container, start: "top 85%" },
-        });
+        gsap.fromTo(
+          container.children,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.12,
+            ease: "power3.out",
+            immediateRender: false,
+            scrollTrigger: { trigger: container, start: "top 85%" },
+          }
+        );
       });
 
       /* Masked line reveal (Catchers-style) — inner slides up from behind the clip */
       gsap.utils.toArray<HTMLElement>(".reveal-mask").forEach((el) => {
         const inner = el.querySelector<HTMLElement>(".reveal-mask__inner");
         if (!inner) return;
-        gsap.to(inner, {
-          y: 0,
-          duration: 1.1,
-          ease: "power4.out",
-          scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none none" },
-        });
+        gsap.fromTo(
+          inner,
+          { y: "115%" },
+          {
+            y: 0,
+            duration: 1.1,
+            ease: "power4.out",
+            immediateRender: false,
+            scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none none" },
+          }
+        );
       });
 
       /* Scroll parallax (Catchers-style drift) */

@@ -7,7 +7,6 @@ import { NewsletterSignup } from "./NewsletterSignup";
 const FOOTER_COLS: { label: string; href: string }[][] = [
   [
     { label: "Home", href: "/" },
-    { label: "Our Clients", href: "/#our-clients" },
     { label: "Our Services", href: "/services" },
     { label: "Our Team", href: "/#our-team-new" },
   ],

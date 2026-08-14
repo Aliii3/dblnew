@@ -2,13 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { ClientReviews } from "@/components/ui/ClientReviews";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { ClientLogos } from "@/components/home/ClientLogos";
 import { HomeBlogCard } from "@/components/home/HomeBlogCard";
 import { HomeHero } from "@/components/home/HomeHero";
 import { CtaMarquee } from "@/components/ui/CtaMarquee";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { ProcessIcon } from "@/components/ui/ProcessIcon";
-import { TeamMotif } from "@/components/ui/TeamMotif";
+import { TeamGrid } from "@/components/ui/TeamGrid";
 import {
   PROVEN_STATS,
   DEEP_IMPACT_STATS,
@@ -114,9 +113,9 @@ export function HomePage() {
                         <Image
                           src={src}
                           alt={clientName(src) || ""}
-                          width={140}
-                          height={56}
-                          style={{ width: "auto", height: 54, maxWidth: 174, objectFit: "contain" }}
+                          width={220}
+                          height={92}
+                          style={{ width: "auto", height: 76, maxWidth: 238, objectFit: "contain" }}
                         />
                       </span>
                     );
@@ -242,30 +241,7 @@ export function HomePage() {
               {p}
             </p>
           ))}
-          <div className="team-grid team-grid--enhanced reveal-stagger" style={{ marginTop: "3rem" }}>
-            {HOME_TEAM.map((member) => {
-              const inner = (
-                <>
-                  <div className="team-card__img">
-                    {member.motif ? <TeamMotif name={member.motif} /> : null}
-                    <Image src={member.image} alt={member.name} width={400} height={500} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                    {member.featured ? (
-                      <div className="team-card__overlay">
-                        <span className="btn btn--primary" style={{ padding: "0.5rem 1rem", fontSize: "0.65rem" }}>View Story</span>
-                      </div>
-                    ) : null}
-                  </div>
-                  <h4>{member.name}</h4>
-                  {member.role ? <p>{member.role}</p> : null}
-                </>
-              );
-              return member.href ? (
-                <Link className="team-card" href={member.href} key={member.name}>{inner}</Link>
-              ) : (
-                <div className="team-card" key={member.name}>{inner}</div>
-              );
-            })}
-          </div>
+          <TeamGrid members={HOME_TEAM} />
         </div>
       </section>
 
@@ -292,8 +268,6 @@ export function HomePage() {
           <ClientReviews />
         </div>
       </section>
-
-      <ClientLogos />
 
       <CtaMarquee />
     </>
