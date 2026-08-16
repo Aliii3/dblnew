@@ -97,9 +97,9 @@ const spec: CaseStudySpec = {
     { value: "5", label: "Typeface hierarchy" },
   ],
   related: [
-    { label: "Market Research & Strategy", href: "/services/market-research" },
+    { label: "Strategy", href: "/services/strategy" },
     { label: "Branding", href: "/services/branding" },
-    { label: "Social Media Management", href: "/services/social-media" },
+    { label: "Performance", href: "/services/performance" },
   ],
 };
 

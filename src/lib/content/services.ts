@@ -1,32 +1,8 @@
 export const SERVICES = [
   {
-    title: "Amazon Ads",
-    description: "End-to-end Amazon management — listing optimization, PPC mastery, and marketplace dominance.",
-    href: "/services/amazon-management-advertising-egypt",
-    icon: "amazon",
-  },
-  {
-    title: "E-Commerce Management",
-    description: "Full e-commerce management across Amazon, Noon, Breadfast, and GoodsMart.",
-    href: "/services/ecommerce-management-egypt",
-    icon: "cart",
-  },
-  {
-    title: "Social Media Management",
-    description: "Strategy, content, paid social, and community management across all major platforms.",
-    href: "/services/social-media",
-    icon: "chart",
-  },
-  {
-    title: "Website Development",
-    description: "High-converting websites built for performance, CRO, and brand growth.",
-    href: "/services/website-development",
-    icon: "web",
-  },
-  {
-    title: "Market Research",
+    title: "Strategy",
     description: "Data-driven insights and competitor analysis to inform your FMCG growth strategy.",
-    href: "/services/market-research",
+    href: "/services/strategy",
     icon: "research",
   },
   {
@@ -34,6 +10,30 @@ export const SERVICES = [
     description: "Complete brand identity — strategy, naming, visual systems, and full guidelines built to last.",
     href: "/services/branding",
     icon: "brand",
+  },
+  {
+    title: "Performance",
+    description: "Full-funnel paid media across Meta, Google, TikTok, and Snapchat — tested and optimized daily.",
+    href: "/services/performance",
+    icon: "chart",
+  },
+  {
+    title: "Commerce",
+    description: "Full e-commerce management across Amazon, Noon, Breadfast, and GoodsMart.",
+    href: "/services/commerce",
+    icon: "cart",
+  },
+  {
+    title: "Amazon Growth",
+    description: "End-to-end Amazon management — listing optimization, PPC mastery, and marketplace dominance.",
+    href: "/services/amazon-growth",
+    icon: "amazon",
+  },
+  {
+    title: "Technology",
+    description: "High-converting websites built for performance, CRO, and brand growth.",
+    href: "/services/technology",
+    icon: "web",
   },
 ] as const;
 

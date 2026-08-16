@@ -40,14 +40,7 @@ export function getService(slug: string): ServicePage | undefined {
   return SERVICES.find((s) => s.slug === slug);
 }
 
-const DEDICATED_SERVICE_PAGES = new Set([
-  "amazon",
-  "e-commerce-management",
-  "social-media",
-  "market-research",
-  "website-development",
-  "branding",
-]);
+const DEDICATED_SERVICE_PAGES = new Set(["amazon", "e-commerce-management", "branding"]);
 
 export function getAllServiceSlugs(): string[] {
   return SERVICES.map((s) => s.slug).filter((s) => !DEDICATED_SERVICE_PAGES.has(s));

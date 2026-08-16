@@ -8,10 +8,10 @@ import { createPageMetadata } from "@/lib/seo";
 type ServiceIconName = "amazon" | "cart" | "chart" | "web" | "research";
 
 export const metadata = createPageMetadata({
-  title: "Market Research & Consultancy",
+  title: "Strategy & Consultancy",
   description:
     "13+ years of market research and brand consultancy — from FMCG launches to rebrands across Egypt, the GCC, and Africa.",
-  path: "/services/market-research",
+  path: "/services/strategy",
 });
 
 const SERVICES: { title: string; desc: string; icon: ServiceIconName }[] = [
@@ -111,14 +111,14 @@ const PROJECTS: { sector: string; client: string; year: string; desc: string }[]
   },
 ];
 
-export default function MarketResearchPage() {
+export default function StrategyPage() {
   return (
     <SiteProvider activeNav="services" innerPage>
       <PageHero
-        label="Market Research & Consultancy"
+        label="Strategy & Consultancy"
         title={
           <>
-            Market Research <span className="text-gold">& Consultancy</span>
+            Strategy <span className="text-gold">& Consultancy</span>
           </>
         }
         subtitle="Over a decade of brand strategy and market research — launches, rebrands, and go-to-market consultancy across Egypt, the GCC, and Africa."
@@ -141,7 +141,7 @@ export default function MarketResearchPage() {
       <section className="section section--glow">
         <div className="container">
           <span className="section-label reveal">Our Services</span>
-          <h2 className="reveal" style={{ fontSize: "clamp(1.6rem,4vw,2.4rem)", margin: "0.5rem 0 2.5rem", color: "#0E2154" }}>
+          <h2 className="reveal" style={{ fontSize: "clamp(1.6rem,4vw,2.4rem)", margin: "0.5rem 0 2.5rem", color: "#1f3465" }}>
             A comprehensive range of <span className="text-gold">marketing services</span>
           </h2>
           <div className="services-grid services-grid--enhanced reveal-stagger">
@@ -162,7 +162,7 @@ export default function MarketResearchPage() {
       <section className="section">
         <div className="container">
           <span className="section-label reveal">How It Works</span>
-          <h2 className="reveal" style={{ fontSize: "clamp(1.6rem,4vw,2.4rem)", margin: "0.5rem 0 2.5rem", color: "#0E2154" }}>
+          <h2 className="reveal" style={{ fontSize: "clamp(1.6rem,4vw,2.4rem)", margin: "0.5rem 0 2.5rem", color: "#1f3465" }}>
             Our <span className="text-gold">Process</span>
           </h2>
           <div className="cs-steps reveal-stagger">
@@ -180,7 +180,7 @@ export default function MarketResearchPage() {
       <section className="section section--glow">
         <div className="container">
           <span className="section-label reveal">Selected Engagements</span>
-          <h2 className="reveal" style={{ fontSize: "clamp(1.6rem,4vw,2.4rem)", margin: "0.5rem 0 1rem", color: "#0E2154" }}>
+          <h2 className="reveal" style={{ fontSize: "clamp(1.6rem,4vw,2.4rem)", margin: "0.5rem 0 1rem", color: "#1f3465" }}>
             Brands we&apos;ve <span className="text-gold">researched & launched</span>
           </h2>
           <p className="reveal content-prose" style={{ maxWidth: 640, margin: "0 0 2.5rem" }}>

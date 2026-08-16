@@ -6,10 +6,10 @@ import { PageCTA } from "@/components/ui/PageCTA";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "E-Commerce Management Agency in Egypt | Amazon, Noon & Marketplace Growth",
+  title: "Commerce Agency in Egypt | Amazon, Noon & Marketplace Growth",
   description:
     "Double Shot is Egypt's leading e-commerce management agency for FMCG brands. We manage Amazon Egypt, Noon, Talabat Mart, HungerStation & more — catalogue optimization, ads, brand stores, and full-funnel growth. Let's own your shelf.",
-  path: "/services/ecommerce-management-egypt",
+  path: "/services/commerce",
   image: "/media/case-studies/ecommerce/p05.jpg",
 });
 
@@ -66,14 +66,14 @@ const headingStyle = {
   color: "var(--text-strong)",
 };
 
-export default function EcommerceManagementPage() {
+export default function CommercePage() {
   return (
     <SiteProvider activeNav="services" innerPage>
       <PageHero
-        label="E-Commerce Management"
+        label="Commerce"
         title={
           <>
-            E-Commerce Management Agency in Egypt — Built for FMCG Brands That Want to{" "}
+            Commerce, Built for FMCG Brands That Want to{" "}
             <span className="text-gold">Lead</span>
           </>
         }
@@ -135,7 +135,7 @@ export default function EcommerceManagementPage() {
       <section className="section section--glow">
         <div className="container content-shell">
           <h2 className="reveal" style={headingStyle}>
-            What Our E-Commerce Management Service Covers
+            What Our Commerce Service Covers
           </h2>
           <ul className="checklist reveal">
             {COVERS.map((item) => (

@@ -68,8 +68,8 @@ const spec: CaseStudySpec = {
     { value: "3", label: "New bundle SKUs permanently listed" },
   ],
   related: [
-    { label: "Amazon Ads", href: "/services/amazon-management-advertising-egypt" },
-    { label: "Full E-Commerce Management", href: "/services/ecommerce-management-egypt" },
+    { label: "Amazon Growth", href: "/services/amazon-growth" },
+    { label: "Commerce", href: "/services/commerce" },
   ],
 };
 

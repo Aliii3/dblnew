@@ -29,7 +29,7 @@ export default function ServicesPage() {
         actions={[{ label: "Start Your Project", href: "/contact" }]}
       />
       <TickerCross
-        items={["Amazon Ads", "E-Commerce", "Social Media", "Website Dev", "Market Research", "Branding"]}
+        items={["Strategy", "Creative", "Performance", "Commerce", "Amazon Growth", "Technology"]}
       />
 
       <section className="section">

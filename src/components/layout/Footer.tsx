@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LOGO_URL, SOCIAL_LINKS } from "@/lib/site";
+import { BRAND_QUOTE, LOGO_URL, SOCIAL_LINKS } from "@/lib/site";
 import { SocialIcon } from "@/components/ui/SocialIcon";
 import { NewsletterSignup } from "./NewsletterSignup";
 
@@ -58,6 +58,10 @@ export function Footer() {
             </a>
           ))}
         </div>
+      </div>
+
+      <div className="container footer__quote">
+        <p>{BRAND_QUOTE}</p>
       </div>
 
       <div className="container footer__bottom">

@@ -7,10 +7,10 @@ import { CaseStudyBar } from "@/components/ui/CaseStudyBar";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Amazon Management & Advertising Agency — Egypt, KSA & UAE",
+  title: "Amazon Growth Agency — Egypt, KSA & UAE",
   description:
     "Double Shot manages Amazon accounts and runs Sponsored Products, Sponsored Brands & Display ads for FMCG brands across Amazon Egypt, KSA, and UAE. Catalogue optimization, A+ content, Brand Store design, and performance advertising — all in one agency.",
-  path: "/services/amazon-management-advertising-egypt",
+  path: "/services/amazon-growth",
   image: "/media/case-studies/ecommerce/p05.jpg",
 });
 
@@ -87,7 +87,7 @@ const headingStyle = {
   color: "var(--text-strong)",
 };
 
-export default function AmazonServicesPage() {
+export default function AmazonGrowthPage() {
   return (
     <SiteProvider activeNav="services" innerPage>
       {/* Amazon Ads banner — full-bleed band at the artwork's natural 3.2:1 */}
@@ -106,11 +106,11 @@ export default function AmazonServicesPage() {
       </section>
 
       <PageHero
-        label="Amazon Management"
+        label="Amazon Growth"
         title={
           <>
-            Amazon Ads That Turn Visibility into{" "}
-            <span className="text-gold">Growth</span>
+            Amazon Growth That Turns Visibility into{" "}
+            <span className="text-gold">Sales</span>
           </>
         }
         subtitle="Most brands are on Amazon. The ones that grow are the ones that are managed. At Double Shot, we handle every layer of your Amazon presence across Egypt, Saudi Arabia, and the UAE — from listing health and catalogue optimization to full-funnel advertising and Brand Store development. We don't run accounts. We build Amazon growth engines."
@@ -166,7 +166,7 @@ export default function AmazonServicesPage() {
       <section className="section section--glow">
         <div className="container content-shell">
           <h2 className="reveal" style={headingStyle}>
-            What Our Amazon Management Service Includes
+            What Our Amazon Growth Service Includes
           </h2>
           <ul className="checklist reveal">
             {INCLUDES.map((item) => (

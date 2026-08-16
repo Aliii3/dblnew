@@ -5,11 +5,15 @@
   --navy-800: #d2d4c0;
   --navy-700: #c8c7ba;
   --navy-600: #a8a9a1;
-  --gold: #ece07e;
-  --gold-dim: #ece07e40;
-  /* Darker olive-amber — for small text/links on cream that need real contrast.
-     --gold itself stays muted for fills, buttons, and large display accents. */
-  --gold-text: #7c6a1a;
+  --gold: #fcb912;
+  --gold-dim: #fcb91240;
+  /* Brand blue — for small text/links on cream that need real contrast.
+     --gold itself stays for fills, buttons, and large display accents. */
+  --gold-text: #1f3465;
+  /* Brand blue — large display headings/text that should read as "brand blue".
+     Kept separate from --navy-700 because that variable is also used in
+     background gradients, which stay on the light/cream palette. */
+  --brand-blue: #1f3465;
   --ice: #1a1510;
   --muted: #5c584c;
   --text-strong: #1a1510;
@@ -2055,7 +2059,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 }
 .team-modal__copy h3 {
   margin-top: 0.75rem;
-  color: var(--navy-700);
+  color: var(--brand-blue);
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 7vw, 5.4rem);
   font-weight: 900;
@@ -2509,9 +2513,10 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 
 /* Utilities */
 .text-gold { color: var(--gold); }
-/* Small inline links/labels need the darker readable amber — bright gold only
+/* Small inline links/labels need the readable brand blue — bright gold only
    works at display-heading sizes. */
 .text-gold--link { color: var(--gold-text) !important; }
+.text-blue { color: var(--brand-blue); }
 .sr-only {
   position: absolute;
   width: 1px;

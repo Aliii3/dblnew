@@ -11,6 +11,10 @@ export const SITE = {
 
 export const LOGO_URL = "/brand/logo.png";
 
+/** Values line, shown in the footer. */
+export const BRAND_QUOTE =
+  "Partner honestly. Grow ethically. Empower locally. Build future leaders. Create deep impact.";
+
 /** Framer CDN fallback for external embeds */
 export const LOGO_URL_CDN =
   "https://framerusercontent.com/images/BBeCdJdGDocOQg4RKp3Bx3sU.png";
@@ -31,15 +35,15 @@ export const NAV_ITEMS: NavItem[] = [
   { key: "home", label: "Home", href: "/" },
   {
     key: "services",
-    label: "Our Services",
+    label: "Solutions",
     href: "/services",
     children: [
-      { label: "Amazon Ads", href: "/services/amazon-management-advertising-egypt" },
-      { label: "Market Research", href: "/services/market-research" },
-      { label: "Social Media Management", href: "/services/social-media" },
-      { label: "E-Commerce Management", href: "/services/ecommerce-management-egypt" },
-      { label: "Website Development", href: "/services/website-development" },
-      { label: "Branding", href: "/services/branding" },
+      { label: "Strategy", href: "/services/strategy" },
+      { label: "Creative", href: "/services/branding" },
+      { label: "Performance", href: "/services/performance" },
+      { label: "Commerce", href: "/services/commerce" },
+      { label: "Amazon Growth", href: "/services/amazon-growth" },
+      { label: "Technology", href: "/services/technology" },
     ],
   },
   { key: "impact", label: "Deep Impact", href: "/deep-impact" },

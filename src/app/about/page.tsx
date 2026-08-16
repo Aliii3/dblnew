@@ -5,7 +5,7 @@ import { PhotoHero } from "@/components/ui/PhotoHero";
 import { TickerCross } from "@/components/ui/TickerCross";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TeamGrid } from "@/components/ui/TeamGrid";
-import { ABOUT_COPY, JOURNEY } from "@/lib/content/about";
+import { ABOUT_COPY, JOURNEY, MISSION_VISION, VALUES } from "@/lib/content/about";
 import { HOME_TEAM } from "@/lib/content/home";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -52,6 +52,51 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Mission & Vision */}
+        <section className="section section--glow" id="mission">
+          <div className="container content-shell">
+            <span className="section-label reveal">Why We Exist</span>
+            <SectionHeading>
+              Mission &amp; <span className="text-gold">Vision</span>
+            </SectionHeading>
+            <div className="pillars reveal-stagger">
+              {MISSION_VISION.map((m) => (
+                <article className="pillar" key={m.kicker}>
+                  <span className="pillar__kicker">{m.kicker}</span>
+                  <h3 className="pillar__title">{m.title}</h3>
+                  <p className="pillar__body">{m.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Values */}
+        <section className="section" id="values">
+          <div className="container content-shell">
+            <span className="section-label reveal">What We Stand For</span>
+            <SectionHeading>
+              <span className="text-blue">Dblshot</span> <span className="text-gold">Values</span>
+            </SectionHeading>
+            <div className="values-accordion reveal-stagger">
+              {VALUES.map((v, i) => (
+                <details className="values-accordion__item" key={v.title} open={i === 0}>
+                  <summary className="values-accordion__summary">
+                    <span className="values-accordion__num">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="values-accordion__title">{v.title}</span>
+                    <span className="values-accordion__icon" aria-hidden="true">
+                      +
+                    </span>
+                  </summary>
+                  <div className="values-accordion__body">
+                    <p>{v.body}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Meet the team */}
         <section className="section about-page__team" id="team">
           <div className="container">
@@ -75,7 +120,9 @@ export default function AboutPage() {
           <div className="container">
             <span className="section-label reveal">Launch Sequence Initiated</span>
             <h2 className="about-page__journey-title reveal">
-              {JOURNEY.title.replace("Dblshot", "")} <span className="text-gold">Dblshot</span>
+              {JOURNEY.title.split("Dblshot")[0]}
+              <span className="text-gold">Dblshot</span>
+              {JOURNEY.title.split("Dblshot")[1]}
             </h2>
             <p className="about-page__journey-intro reveal content-prose">
               {JOURNEY.intro}
@@ -93,7 +140,11 @@ export default function AboutPage() {
                     <h3 className="timeline__headline">
                       {m.phase}: <span className="text-gold">{m.headline}</span>
                     </h3>
-                    <p className="timeline__text">{m.body}</p>
+                    {m.body.map((p) => (
+                      <p className="timeline__text" key={p.slice(0, 40)}>
+                        {p}
+                      </p>
+                    ))}
                   </div>
                 </li>
               ))}
@@ -103,6 +154,24 @@ export default function AboutPage() {
                 <span key={s}>{s}</span>
               ))}
             </div>
+
+            <div className="about-page__story content-prose">
+              <h3 className="reveal" style={{ fontSize: "1.05rem", textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--gold-text)", margin: "0 0 1rem" }}>
+                {JOURNEY.epilogueHeading}
+              </h3>
+              {JOURNEY.epilogue.map((p) => (
+                <p className="reveal" key={p.slice(0, 40)}>
+                  {p}
+                </p>
+              ))}
+            </div>
+
+            <p className="reveal" style={{ color: "var(--ice)", marginTop: "2.5rem", fontSize: "1.1rem" }}>
+              {JOURNEY.closing}
+            </p>
+            <p className="reveal text-gold" style={{ fontWeight: 800, fontSize: "1.25rem", marginTop: "0.5rem" }}>
+              {JOURNEY.signature}
+            </p>
           </div>
         </section>
       </div>

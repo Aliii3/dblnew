@@ -87,8 +87,8 @@ const spec: CaseStudySpec = {
   ],
   related: [
     { label: "Branding", href: "/services/branding" },
-    { label: "Social Media Management", href: "/services/social-media" },
-    { label: "Website Development", href: "/services/website-development" },
+    { label: "Performance", href: "/services/performance" },
+    { label: "Technology", href: "/services/technology" },
   ],
 };
 

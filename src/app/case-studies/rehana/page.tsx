@@ -70,8 +70,8 @@ const spec: CaseStudySpec = {
     { value: "40%", label: "Growth on aged inventory" },
   ],
   related: [
-    { label: "Amazon Ads", href: "/services/amazon-management-advertising-egypt" },
-    { label: "Full E-Commerce Management", href: "/services/ecommerce-management-egypt" },
+    { label: "Amazon Growth", href: "/services/amazon-growth" },
+    { label: "Commerce", href: "/services/commerce" },
   ],
   caseBarActive: "rehana",
 };

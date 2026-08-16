@@ -46,7 +46,7 @@ export default async function ServicePage({ params }: Props) {
           {service.detail ? <p className="reveal">{service.detail}</p> : null}
           {service.benefits.length > 0 ? (
             <>
-              <h2 className="reveal" style={{ fontSize: "1.35rem", textTransform: "uppercase", margin: "2rem 0 1rem", color: "#0E2154" }}>
+              <h2 className="reveal" style={{ fontSize: "1.35rem", textTransform: "uppercase", margin: "2rem 0 1rem", color: "#1f3465" }}>
                 Why Partner with Us?
               </h2>
               <ul className="checklist reveal">

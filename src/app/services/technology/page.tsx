@@ -5,10 +5,10 @@ import { PageCTA } from "@/components/ui/PageCTA";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Website Development",
+  title: "Technology",
   description:
     "Conversion-focused websites by DBLSHOT — e-commerce and lead-generation builds on WordPress, Framer, and native platforms with CRO baked in.",
-  path: "/services/website-development",
+  path: "/services/technology",
 });
 
 const WHAT_WE_BUILD = [
@@ -28,7 +28,7 @@ const WHY_PARTNER = [
   "Websites that balance brand experience with commercial performance",
 ];
 
-export default function WebsiteDevelopmentPage() {
+export default function TechnologyPage() {
   return (
     <SiteProvider activeNav="services" innerPage>
       {/* Full-bleed band at the artwork's natural 3.2:1, same as the Amazon Ads page */}
@@ -47,10 +47,10 @@ export default function WebsiteDevelopmentPage() {
       </section>
 
       <PageHero
-        label="Website Development"
+        label="Technology"
         title={
           <>
-            Website <span className="text-gold">Development</span>
+            Technology <span className="text-gold">& Development</span>
           </>
         }
         subtitle="Digital experiences that support growth, strengthen brand presence, and guide users toward action."

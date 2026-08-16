@@ -5,12 +5,12 @@ import { SITE } from "@/lib/site";
 
 /** Actual live service page routes (kept explicit — some use SEO-specific slugs). */
 const SERVICE_ROUTES = [
-  "/services/amazon-management-advertising-egypt",
-  "/services/ecommerce-management-egypt",
-  "/services/social-media",
-  "/services/website-development",
+  "/services/amazon-growth",
+  "/services/commerce",
+  "/services/performance",
+  "/services/technology",
   "/services/branding",
-  "/services/market-research",
+  "/services/strategy",
 ];
 
 const STATIC_ROUTES = [

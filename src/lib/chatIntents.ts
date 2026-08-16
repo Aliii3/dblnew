@@ -32,7 +32,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     ],
     answer:
       "We manage Amazon end-to-end — catalogue and listing optimization, A+ content, Brand Stores, and full-funnel Sponsored Products/Brands/Display advertising across Egypt, KSA & UAE.",
-    links: [{ label: "Amazon Management & Advertising", href: "/services/amazon-management-advertising-egypt" }],
+    links: [{ label: "Amazon Growth", href: "/services/amazon-growth" }],
   },
   {
     id: "ecommerce",
@@ -43,7 +43,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     ],
     answer:
       "We run full e-commerce management across Amazon, Noon, Talabat Mart, HungerStation, Breadfast and more — listings, ads, promotions, brand stores, and live reporting.",
-    links: [{ label: "E-Commerce Management", href: "/services/ecommerce-management-egypt" }],
+    links: [{ label: "Commerce", href: "/services/commerce" }],
   },
   {
     id: "social",
@@ -53,7 +53,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     ],
     answer:
       "We manage social media as a growth function — strategy, quarterly content, paid social, and community management across Instagram, Facebook, TikTok, LinkedIn, and X.",
-    links: [{ label: "Social Media Management", href: "/services/social-media" }],
+    links: [{ label: "Performance", href: "/services/performance" }],
   },
   {
     id: "website",
@@ -63,7 +63,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     ],
     answer:
       "We build conversion-focused websites — e-commerce and lead-gen builds on WordPress, Framer, and native platforms, with CRO baked in.",
-    links: [{ label: "Website Development", href: "/services/website-development" }],
+    links: [{ label: "Technology", href: "/services/technology" }],
   },
   {
     id: "branding",
@@ -84,7 +84,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     keywords: ["research", "market research", "competitor", "insights", "strategy", "market entry"],
     answer:
       "We run data-driven market research and competitor analysis to inform positioning, pricing, and channel strategy before you launch.",
-    links: [{ label: "Market Research & Strategy", href: "/services/market-research" }],
+    links: [{ label: "Strategy", href: "/services/strategy" }],
   },
   {
     id: "results",
@@ -101,7 +101,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     id: "services",
     keywords: ["service", "services", "what do you do", "offer", "help with", "capabilities"],
     answer:
-      "We cover Amazon Ads, full E-Commerce Management, Social Media, Website Development, Branding, and Market Research — all built for FMCG growth.",
+      "We cover Strategy, Creative, Performance, Commerce, Amazon Growth, and Technology — all built for FMCG growth.",
     links: [{ label: "All Services", href: "/services" }],
   },
   {

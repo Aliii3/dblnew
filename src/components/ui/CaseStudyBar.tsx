@@ -12,7 +12,7 @@ type CaseTab = {
 };
 
 const CASE_TABS: CaseTab[] = [
-  { key: "about", title: "About", sub: "Amazon Ads", href: "/services/amazon-management-advertising-egypt" },
+  { key: "about", title: "About", sub: "Amazon Growth", href: "/services/amazon-growth" },
   { key: "isis-organic", title: "ISIS Organic", sub: "Case Study", href: "/case-studies/isis-organic" },
   { key: "spritz", title: "Spritz", sub: "Case Study", href: "/case-studies/spritz" },
   { key: "rehana", title: "Rehana", sub: "Case Study", href: "/case-studies/rehana" },

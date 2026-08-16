@@ -87,10 +87,10 @@ const spec: CaseStudySpec = {
     { value: "11×", label: "ROAS" },
   ],
   related: [
-    { label: "Full E-Commerce Management", href: "/services/ecommerce-management-egypt" },
-    { label: "Amazon Ads", href: "/services/amazon-management-advertising-egypt" },
-    { label: "Website Development", href: "/services/website-development" },
-    { label: "Social Media Management", href: "/services/social-media" },
+    { label: "Commerce", href: "/services/commerce" },
+    { label: "Amazon Growth", href: "/services/amazon-growth" },
+    { label: "Technology", href: "/services/technology" },
+    { label: "Performance", href: "/services/performance" },
   ],
   caseBarActive: "spritz",
 };

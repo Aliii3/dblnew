@@ -88,8 +88,8 @@ const spec: CaseStudySpec = {
     { value: "477%", label: "GoodsMart" },
   ],
   related: [
-    { label: "Amazon Ads", href: "/services/amazon-management-advertising-egypt" },
-    { label: "Full E-Commerce Management", href: "/services/ecommerce-management-egypt" },
+    { label: "Amazon Growth", href: "/services/amazon-growth" },
+    { label: "Commerce", href: "/services/commerce" },
   ],
   caseBarActive: "isis-organic",
 };
