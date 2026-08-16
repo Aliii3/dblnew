@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Spritz — Case Study",
   description:
-    "410% growth in under six months for a low-calorie cooking-oil-spray brand across Amazon, Noon, website, and social — plus 202% social-driven sales growth, by Double Shot.",
+    "410% growth in under six months for a low-calorie cooking-oil-spray brand across Amazon, Noon, website, and social — plus 202% social-driven sales growth, by Dblshot.",
   path: "/case-studies/spritz",
   image: "/media/case-studies/spritz-kitchen-essentials.jpg",
 });
@@ -35,7 +35,7 @@ const spec: CaseStudySpec = {
     {
       heading: "Overview",
       paragraphs: [
-        "Spritz is a health-focused brand specializing in low-calorie cooking oil sprays. While it had a strong offline reputation, its e-commerce presence was early-stage when it partnered with Double Shot in February 2025 — limited to just 3 SKUs with non-compliant imagery.",
+        "Spritz is a health-focused brand specializing in low-calorie cooking oil sprays. While it had a strong offline reputation, its e-commerce presence was early-stage when it partnered with Dblshot in February 2025 — limited to just 3 SKUs with non-compliant imagery.",
       ],
     },
     {
@@ -71,7 +71,7 @@ const spec: CaseStudySpec = {
     {
       heading: "Social Media Management — An Always-On Presence",
       paragraphs: [
-        "Double Shot managed Spritz's social presence end-to-end across Instagram and Facebook — a content strategy and always-on publishing calendar, day-to-day community management, and layered paid social — turning presence into a consistent revenue channel.",
+        "Dblshot managed Spritz's social presence end-to-end across Instagram and Facebook — a content strategy and always-on publishing calendar, day-to-day community management, and layered paid social — turning presence into a consistent revenue channel.",
       ],
       stats: [
         { value: "202%", label: "Social-driven sales growth YoY" },

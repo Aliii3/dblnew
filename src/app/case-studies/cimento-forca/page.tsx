@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Cimento Força — Case Study",
   description:
-    "Mapping a market, building a brand, and winning share of voice in an uncontested digital category — Cimento Força's Mozambique market entry, brand identity, and social launch by Double Shot.",
+    "Mapping a market, building a brand, and winning share of voice in an uncontested digital category — Cimento Força's Mozambique market entry, brand identity, and social launch by Dblshot.",
   path: "/case-studies/cimento-forca",
   image: "/media/case-studies/ecommerce/p06.jpg",
 });
@@ -35,7 +35,7 @@ const spec: CaseStudySpec = {
     {
       heading: "Phase I — Market Entry Research",
       paragraphs: [
-        "Ahead of launching Cimento Força under parent company FESCO, Double Shot conducted a full market research study to map Mozambique's cement industry — sizing the opportunity, profiling competitors, and identifying the strategic gap Cimento Força could exploit. The research underpinned every later decision, from positioning to channel strategy.",
+        "Ahead of launching Cimento Força under parent company FESCO, Dblshot conducted a full market research study to map Mozambique's cement industry — sizing the opportunity, profiling competitors, and identifying the strategic gap Cimento Força could exploit. The research underpinned every later decision, from positioning to channel strategy.",
       ],
       bullets: [
         "Population 32M+, 90% smartphone penetration, median age 17",
@@ -56,7 +56,7 @@ const spec: CaseStudySpec = {
     {
       heading: "Phase II — Full Brand Identity",
       paragraphs: [
-        "The research converged on positioning Cimento Força as “The Specialist” — efficiency, affordability, and convenient market presence. Double Shot then designed a complete brand identity flexing across retail packaging, B2B stationery, vehicle and street branding, and merchandise.",
+        "The research converged on positioning Cimento Força as “The Specialist” — efficiency, affordability, and convenient market presence. Dblshot then designed a complete brand identity flexing across retail packaging, B2B stationery, vehicle and street branding, and merchandise.",
       ],
       bullets: [
         "Positioning: “The Specialist”; brand line: O cimento campeão (“The champion cement”)",

@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "iSiS Organic — Case Study",
   description:
-    "From zero online presence to Egypt's fastest-growing FMCG brand in e-commerce — 2,740% Amazon YoY growth and 245% total e-commerce growth across seven platforms, by Double Shot.",
+    "From zero online presence to Egypt's fastest-growing FMCG brand in e-commerce — 2,740% Amazon YoY growth and 245% total e-commerce growth across seven platforms, by Dblshot.",
   path: "/case-studies/isis-organic",
   image: "/media/case-studies/ecommerce/p05.jpg",
 });
@@ -36,7 +36,7 @@ const spec: CaseStudySpec = {
     {
       heading: "Overview",
       paragraphs: [
-        "ISIS Organic is a leading Egyptian FMCG brand with over 40 years of heritage in the organic and natural products space — spanning honey, herbal teas, natural water, oils, snacks, and juices. Despite strong retail equity, the brand had almost no e-commerce footprint when it partnered with Double Shot in April 2024.",
+        "ISIS Organic is a leading Egyptian FMCG brand with over 40 years of heritage in the organic and natural products space — spanning honey, herbal teas, natural water, oils, snacks, and juices. Despite strong retail equity, the brand had almost no e-commerce footprint when it partnered with Dblshot in April 2024.",
       ],
     },
     {
@@ -52,11 +52,11 @@ const spec: CaseStudySpec = {
     {
       heading: "Phase 1 — Building the Amazon Foundation (April 2024)",
       paragraphs: [
-        "Double Shot rebuilt ISIS Organic's Amazon presence from the ground up — every listing restructured for search relevance and conversion, paired with a full-funnel advertising strategy (Sponsored Brands, Sponsored Products, Sponsored Display) and a dedicated Amazon Brand Store to increase basket size and AOV.",
+        "Dblshot rebuilt ISIS Organic's Amazon presence from the ground up — every listing restructured for search relevance and conversion, paired with a full-funnel advertising strategy (Sponsored Brands, Sponsored Products, Sponsored Display) and a dedicated Amazon Brand Store to increase basket size and AOV.",
       ],
       stats: [
         { value: "900%", label: "Amazon growth in 4 months" },
-        { value: "0 → Full Funnel", label: "Ad spend before Double Shot" },
+        { value: "0 → Full Funnel", label: "Ad spend before Dblshot" },
         { value: "8/10", label: "Amazon IDQ score reached" },
       ],
     },

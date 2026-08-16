@@ -129,7 +129,7 @@ export default function StrategyPage() {
         <div className="container content-shell content-prose">
           <span className="section-label reveal">Who We Are</span>
           <p className="reveal" style={{ fontSize: "1.15rem" }}>
-            At DoubleShot, we believe that exceptional marketing requires commitment, innovation,
+            At Dblshot, we believe that exceptional marketing requires commitment, innovation,
             and a heavy dose of creativity. We are a Performance Marketing and Consulting Agency
             that understands the importance of results-driven strategies and the value of a strong
             brand identity.

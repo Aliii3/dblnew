@@ -9,7 +9,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Amazon Growth Agency — Egypt, KSA & UAE",
   description:
-    "Double Shot manages Amazon accounts and runs Sponsored Products, Sponsored Brands & Display ads for FMCG brands across Amazon Egypt, KSA, and UAE. Catalogue optimization, A+ content, Brand Store design, and performance advertising — all in one agency.",
+    "Dblshot manages Amazon accounts and runs Sponsored Products, Sponsored Brands & Display ads for FMCG brands across Amazon Egypt, KSA, and UAE. Catalogue optimization, A+ content, Brand Store design, and performance advertising — all in one agency.",
   path: "/services/amazon-growth",
   image: "/media/case-studies/ecommerce/p05.jpg",
 });
@@ -113,7 +113,7 @@ export default function AmazonGrowthPage() {
             <span className="text-gold">Sales</span>
           </>
         }
-        subtitle="Most brands are on Amazon. The ones that grow are the ones that are managed. At Double Shot, we handle every layer of your Amazon presence across Egypt, Saudi Arabia, and the UAE — from listing health and catalogue optimization to full-funnel advertising and Brand Store development. We don't run accounts. We build Amazon growth engines."
+        subtitle="Most brands are on Amazon. The ones that grow are the ones that are managed. At Dblshot, we handle every layer of your Amazon presence across Egypt, Saudi Arabia, and the UAE — from listing health and catalogue optimization to full-funnel advertising and Brand Store development. We don't run accounts. We build Amazon growth engines."
         ctaLabel="Start a Strategy Call"
         ctaHref="/contact"
       />
@@ -178,19 +178,19 @@ export default function AmazonGrowthPage() {
 
       <PageCTA
         title="Let's Own Your Shelf"
-        description="Unlock your brand's full marketplace potential across Amazon Egypt, KSA & UAE with Double Shot."
+        description="Unlock your brand's full marketplace potential across Amazon Egypt, KSA & UAE with Dblshot."
       />
 
       {/* Why us */}
       <section className="section">
         <div className="container content-shell content-prose">
           <h2 className="reveal" style={headingStyle}>
-            Why FMCG Brands Trust Double Shot for Amazon Management in Egypt, KSA &amp; UAE
+            Why FMCG Brands Trust Dblshot for Amazon Management in Egypt, KSA &amp; UAE
           </h2>
           <p className="reveal">
             Amazon in Egypt, Saudi Arabia, and the UAE operates differently from global markets —
             consumer behavior, category dynamics, platform mechanics, and seasonal peaks all
-            require local expertise. Double Shot is built entirely around this reality. Our team
+            require local expertise. Dblshot is built entirely around this reality. Our team
             manages FMCG brands daily across all three Amazon markets, bringing category
             intelligence, platform knowledge, and optimization experience a generalist agency
             simply cannot match.
@@ -222,7 +222,7 @@ export default function AmazonGrowthPage() {
                 iSiS Organic — 2,740% Amazon Growth Year-on-Year
               </h3>
               <p style={{ color: "var(--muted)", lineHeight: 1.7, marginBottom: "1.5rem" }}>
-                When Double Shot took over full Amazon management for ISIS Organic, we rebuilt their
+                When Dblshot took over full Amazon management for ISIS Organic, we rebuilt their
                 catalogue, enrolled the brand in Brand Registry, created A+ content across all SKUs,
                 and launched a structured Sponsored Products and Sponsored Brands strategy — making
                 Amazon their highest-performing sales channel within 12 months.

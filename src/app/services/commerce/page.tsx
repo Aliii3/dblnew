@@ -8,7 +8,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Commerce Agency in Egypt | Amazon, Noon & Marketplace Growth",
   description:
-    "Double Shot is Egypt's leading e-commerce management agency for FMCG brands. We manage Amazon Egypt, Noon, Talabat Mart, HungerStation & more — catalogue optimization, ads, brand stores, and full-funnel growth. Let's own your shelf.",
+    "Dblshot is Egypt's leading e-commerce management agency for FMCG brands. We manage Amazon Egypt, Noon, Talabat Mart, HungerStation & more — catalogue optimization, ads, brand stores, and full-funnel growth. Let's own your shelf.",
   path: "/services/commerce",
   image: "/media/case-studies/ecommerce/p05.jpg",
 });
@@ -77,7 +77,7 @@ export default function CommercePage() {
             <span className="text-gold">Lead</span>
           </>
         }
-        subtitle="At Double Shot, we help FMCG brands build, optimize, and scale their presence across Egypt's and Saudi Arabia's biggest marketplaces — Amazon, Noon, Talabat Mart, HungerStation, Breadfast, and beyond. From catalogue optimization and A+ content to marketplace advertising and brand store development, we manage the full e-commerce ecosystem with one goal: turning your digital shelf into your strongest sales channel."
+        subtitle="At Dblshot, we help FMCG brands build, optimize, and scale their presence across Egypt's and Saudi Arabia's biggest marketplaces — Amazon, Noon, Talabat Mart, HungerStation, Breadfast, and beyond. From catalogue optimization and A+ content to marketplace advertising and brand store development, we manage the full e-commerce ecosystem with one goal: turning your digital shelf into your strongest sales channel."
       />
 
       {/* About the service */}
@@ -87,7 +87,7 @@ export default function CommercePage() {
             Full E-Commerce Management
           </h2>
           <p className="reveal">
-            At Double Shot, we turn e-commerce into a structured, scalable growth engine. As a
+            At Dblshot, we turn e-commerce into a structured, scalable growth engine. As a
             performance marketing agency with deep FMCG expertise, we help brands build a stronger
             digital presence, optimize operations, and grow across every major marketplace — through
             a strategy that connects visibility, conversion, and commercial performance.
@@ -149,10 +149,10 @@ export default function CommercePage() {
       <section className="section">
         <div className="container content-shell content-prose">
           <h2 className="reveal" style={headingStyle}>
-            Why FMCG Brands Choose Double Shot for E-Commerce Management in Egypt
+            Why FMCG Brands Choose Dblshot for E-Commerce Management in Egypt
           </h2>
           <p className="reveal">
-            We are not a generalist digital agency. Double Shot is a performance marketing agency
+            We are not a generalist digital agency. Dblshot is a performance marketing agency
             specializing in FMCG e-commerce management across Egyptian and Saudi Arabian
             marketplaces. Our team has direct expertise in Amazon Egypt, Noon, Talabat Mart,
             HungerStation, and Breadfast — so we understand the platform mechanics, category
@@ -210,7 +210,7 @@ export default function CommercePage() {
 
       <PageCTA
         title="Let's Own Your Shelf"
-        description="Whether you need stronger marketplace foundations, a better-converting catalogue, or a full end-to-end e-commerce partner — Double Shot is built for this."
+        description="Whether you need stronger marketplace foundations, a better-converting catalogue, or a full end-to-end e-commerce partner — Dblshot is built for this."
       />
     </SiteProvider>
   );

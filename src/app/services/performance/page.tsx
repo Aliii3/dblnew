@@ -7,7 +7,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Performance Marketing",
   description:
-    "Double Shot runs full-funnel paid performance marketing across Meta, Google, TikTok, and Snapchat — media buying, testing, and daily optimization built for measurable FMCG growth.",
+    "Dblshot runs full-funnel paid performance marketing across Meta, Google, TikTok, and Snapchat — media buying, testing, and daily optimization built for measurable FMCG growth.",
   path: "/services/performance",
 });
 

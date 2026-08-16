@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "RAW Kettle Cooked Potatoes — Case Study",
   description:
-    "370% Amazon growth through AOV engineering and ROAS optimization — the RAW Kettle Cooked Potatoes story by Double Shot.",
+    "370% Amazon growth through AOV engineering and ROAS optimization — the RAW Kettle Cooked Potatoes story by Dblshot.",
   path: "/case-studies/raw",
   image: "/media/case-studies/ecommerce/p07.jpg",
 });
@@ -41,7 +41,7 @@ const spec: CaseStudySpec = {
     {
       heading: "The Opportunity",
       paragraphs: [
-        "The challenge wasn't simply driving more traffic. It was increasing the value of each transaction — getting already-interested buyers to spend more per order. Double Shot identified Average Order Value (AOV) as the primary lever to transform RAW's Amazon economics without increasing ad spend.",
+        "The challenge wasn't simply driving more traffic. It was increasing the value of each transaction — getting already-interested buyers to spend more per order. Dblshot identified Average Order Value (AOV) as the primary lever to transform RAW's Amazon economics without increasing ad spend.",
       ],
     },
     {
@@ -58,7 +58,7 @@ const spec: CaseStudySpec = {
     {
       heading: "Expanding the Model — Bundle Listings",
       paragraphs: [
-        "After validating the promotion, Double Shot extended the AOV strategy into permanent catalog architecture: Box of 3, Box of 6, and Box of 10 — available to all shoppers at all times, providing a cleaner, higher-value advertising surface.",
+        "After validating the promotion, Dblshot extended the AOV strategy into permanent catalog architecture: Box of 3, Box of 6, and Box of 10 — available to all shoppers at all times, providing a cleaner, higher-value advertising surface.",
       ],
     },
   ],

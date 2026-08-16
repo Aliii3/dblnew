@@ -42,7 +42,7 @@ const EARLY_BIRD = [
 ];
 
 const MENTOR_BIO =
-  "She's not just the CEO of DOUBLESHOT Performance Marketing — she is the pulse of Egypt's marketing evolution. With 20+ years of strategy and a heart that beats for local brilliance, Radwa blends analytical precision with soul-stirring creativity. She doesn't just build campaigns; she builds movements — sparking unity among local brands and mentoring young minds to chase purpose over popularity.";
+  "She's not just the CEO of DBLSHOT Performance Marketing — she is the pulse of Egypt's marketing evolution. With 20+ years of strategy and a heart that beats for local brilliance, Radwa blends analytical precision with soul-stirring creativity. She doesn't just build campaigns; she builds movements — sparking unity among local brands and mentoring young minds to chase purpose over popularity.";
 
 export default function JuniorMarketerPage() {
   const j = JUNIOR_MARKETER;

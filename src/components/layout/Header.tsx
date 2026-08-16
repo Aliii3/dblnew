@@ -30,7 +30,7 @@ export function Header({ active }: HeaderProps) {
             <Image
               className="nav__logo-img"
               src="/brand/logo-lockup-navy.png"
-              alt="DBLShoT — Performance Marketing and Consulting Agency"
+              alt="DBLSHOT — Performance Marketing and Consulting Agency"
               width={614}
               height={174}
               priority

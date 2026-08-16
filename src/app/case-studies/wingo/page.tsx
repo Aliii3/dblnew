@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Wingo — Branding Case Study",
   description:
-    "Building a new Egyptian poultry and eggs brand from the ground up — name, mascot, color system, packaging architecture, and every operational touchpoint, by Double Shot.",
+    "Building a new Egyptian poultry and eggs brand from the ground up — name, mascot, color system, packaging architecture, and every operational touchpoint, by Dblshot.",
   path: "/case-studies/wingo",
 });
 
@@ -33,7 +33,7 @@ const spec: CaseStudySpec = {
     {
       heading: "Overview",
       paragraphs: [
-        "Wingo is a poultry and eggs brand built for the Egyptian retail market, covering fresh and frozen whole chicken, chicken cuts, and eggs. With no prior visual equity, Double Shot was engaged to create a complete brand identity from a blank page: name, mascot, color system, packaging architecture, and every operational touchpoint.",
+        "Wingo is a poultry and eggs brand built for the Egyptian retail market, covering fresh and frozen whole chicken, chicken cuts, and eggs. With no prior visual equity, Dblshot was engaged to create a complete brand identity from a blank page: name, mascot, color system, packaging architecture, and every operational touchpoint.",
       ],
     },
     {

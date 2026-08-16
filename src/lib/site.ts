@@ -1,6 +1,6 @@
 export const SITE = {
   name: "DBLSHOT",
-  title: "Double Shot",
+  title: "Dblshot",
   description:
     "Strategic performance marketing and e-commerce partner for FMCG brands across Egypt and the GCC.",
   url: "https://dblshot.co",

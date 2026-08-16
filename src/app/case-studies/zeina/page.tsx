@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Zeina — Branding Case Study",
   description:
-    "Rebranding a Saudi food-heritage name (est. 1979) for a new generation — a complete brand identity system by Double Shot that honors four decades of trust.",
+    "Rebranding a Saudi food-heritage name (est. 1979) for a new generation — a complete brand identity system by Dblshot that honors four decades of trust.",
   path: "/case-studies/zeina",
 });
 
@@ -32,7 +32,7 @@ const spec: CaseStudySpec = {
     {
       heading: "Overview",
       paragraphs: [
-        "Zeina is a Saudi food-heritage brand in households across the Kingdom since 1979 — nuts, dried fruits, legumes, spices, and pantry staples rooted in everyday hospitality. Double Shot led a complete brand identity overhaul, repositioning a beloved legacy name for a new generation while honoring four decades of trust.",
+        "Zeina is a Saudi food-heritage brand in households across the Kingdom since 1979 — nuts, dried fruits, legumes, spices, and pantry staples rooted in everyday hospitality. Dblshot led a complete brand identity overhaul, repositioning a beloved legacy name for a new generation while honoring four decades of trust.",
       ],
     },
     {

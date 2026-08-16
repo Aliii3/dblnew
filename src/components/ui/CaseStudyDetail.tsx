@@ -188,7 +188,7 @@ export function CaseStudyDetail({ spec }: { spec: CaseStudySpec }) {
 
       <PageCTA
         title="Let's Talk"
-        description="Powered by Double Shot — Performance Marketing, E-Commerce & Branding."
+        description="Powered by Dblshot — Performance Marketing, E-Commerce & Branding."
       />
     </SiteProvider>
   );

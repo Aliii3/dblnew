@@ -2,7 +2,7 @@ export const PRIVACY_SECTIONS = [
   {
     title: "Introduction",
     content:
-      "Double Shot is a performance marketing and consulting agency providing digital marketing, media buying, e-commerce support, consultancy, and related business services. This Privacy Policy explains how we collect, use, store, and protect information when you use our website, contact us, request proposals, or interact with our campaigns and services.",
+      "Dblshot is a performance marketing and consulting agency providing digital marketing, media buying, e-commerce support, consultancy, and related business services. This Privacy Policy explains how we collect, use, store, and protect information when you use our website, contact us, request proposals, or interact with our campaigns and services.",
   },
   {
     title: "Information We Collect",
@@ -37,7 +37,7 @@ export const PRIVACY_SECTIONS = [
   {
     title: "Third-Party Ad Platforms And Client Data",
     content:
-      "When we manage campaigns on behalf of clients, we may interact with platforms such as Meta, Google Ads, TikTok, and other advertising or analytics tools. In this context, Double Shot acts as a service provider or data processor for the client, who remains responsible for lawful data collection and use. We do not use client campaign data for unrelated Double Shot marketing or share it outside the contracted services.",
+      "When we manage campaigns on behalf of clients, we may interact with platforms such as Meta, Google Ads, TikTok, and other advertising or analytics tools. In this context, Dblshot acts as a service provider or data processor for the client, who remains responsible for lawful data collection and use. We do not use client campaign data for unrelated Dblshot marketing or share it outside the contracted services.",
   },
   {
     title: "How We Share Information",
