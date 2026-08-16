@@ -293,7 +293,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   letter-spacing: -0.02em;
 }
 .nav__logo img { width: 40px; height: auto; }
-/* Full lockup (icon + wordmark) — sized by height so the 4.8:1 artwork keeps
+/* Full lockup (icon + wordmark) — sized by height so the 3.5:1 artwork keeps
    its proportions. */
 .nav__logo--lockup { gap: 0; }
 .nav__logo--lockup .nav__logo-img {
