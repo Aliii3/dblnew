@@ -1609,7 +1609,6 @@ body:has(.hero2) .hero2__wordmark .hero__swap {
 .career-row__media,
 .offer-card,
 .impact-stat,
-.process-node,
 .pillar,
 .mr-card,
 .cs-step,
@@ -1682,13 +1681,18 @@ body:has(.hero2) .hero2__wordmark .hero__swap {
 }
 .service-card__icon,
 .feature-card__icon,
-.offer-card__icon,
-.process-node__icon {
+.offer-card__icon {
   border: 1px solid var(--ink);
   border-radius: 0.45rem;
   background: var(--gold);
   color: var(--ink);
   box-shadow: 0.18rem 0.18rem 0 rgb(26 21 16 / 0.16);
+}
+.process-node__icon {
+  border: none;
+  background: none;
+  box-shadow: none;
+  color: var(--ink);
 }
 .impact-stat {
   padding: clamp(1.4rem, 3vw, 2rem);

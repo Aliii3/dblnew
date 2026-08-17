@@ -9,9 +9,8 @@ export type ProcessIconName =
 
 /**
  * Line-art icons for the Impact Process row, drawn to match the brand icon set.
- * `base` strokes carry the structure in the tile's own ink; `accent` strokes are
- * the highlight detail. The tiles are gold, so the accent is white rather than
- * gold — gold-on-gold would vanish.
+ * `base` strokes carry the structure in ink; `accent` strokes are the highlight
+ * detail, picked out in the brand gold now that the tiles have no fill behind them.
  */
 export function ProcessIcon({ name }: { name: ProcessIconName }) {
   const base = {
@@ -21,7 +20,7 @@ export function ProcessIcon({ name }: { name: ProcessIconName }) {
     strokeLinecap: "round" as const,
     strokeLinejoin: "round" as const,
   };
-  const accent = { ...base, stroke: "#fff" };
+  const accent = { ...base, stroke: "var(--gold)" };
 
   switch (name) {
     case "kickoff":
