@@ -42,13 +42,25 @@ export function TeamGrid({ members }: TeamGridProps) {
           >
             {member.motif ? <TeamMotif name={member.motif} /> : null}
             <div className="team-card__img">
-              <Image
-                src={member.image}
-                alt={member.name}
-                width={400}
-                height={500}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
+              {member.video ? (
+                <video
+                  src={member.video}
+                  poster={member.image}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              ) : (
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={400}
+                  height={500}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              )}
               {member.featured ? (
                 <div className="team-card__overlay">
                   <span className="btn btn--primary" style={{ padding: "0.5rem 1rem", fontSize: "0.65rem" }}>
@@ -71,13 +83,25 @@ export function TeamGrid({ members }: TeamGridProps) {
               ×
             </button>
             <div className="team-modal__photo">
-              <Image
-                src={selected.image}
-                alt={selected.name}
-                width={560}
-                height={700}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
+              {selected.video ? (
+                <video
+                  src={selected.video}
+                  poster={selected.image}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              ) : (
+                <Image
+                  src={selected.image}
+                  alt={selected.name}
+                  width={560}
+                  height={700}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              )}
               {selected.motif ? <TeamMotif name={selected.motif} /> : null}
             </div>
             <div className="team-modal__copy">

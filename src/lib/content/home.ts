@@ -18,6 +18,8 @@ export type HomeTeamMember = {
   motif?: TeamMotifName;
   href?: string;
   featured?: boolean;
+  /** Short looping clip shown in place of the static photo. */
+  video?: string;
 };
 
 export type TeamMotifName =
@@ -49,7 +51,7 @@ export const HOME_BLOG_POSTS = HOME.blogPosts;
 export const HOME_TEAM: HomeTeamMember[] = [
   { name: "Radwa Fathi", role: "CEO", motif: "leadership", image: "/media/team/editorial/radwa.webp", href: "/about", featured: true, bio: "Radwa leads DBLSHOT with a sharp mix of FMCG strategy, performance discipline, and founder-level instinct. She turns ambitious growth goals into clear operating systems for brands across Egypt and the GCC." },
   { name: "AbdelRahman Rashad", role: "Performance Marketing Team Leader", motif: "performance", image: "/media/team/editorial/abdo.webp", bio: "AbdelRahman owns the performance rhythm: campaign structure, testing logic, media efficiency, and daily optimization. He keeps growth focused, measurable, and moving." },
-  { name: "Shrouk Moustafa", role: "Senior Graphic Designer - Team Leader", motif: "design", image: "/media/team/editorial/shrouk.webp", bio: "Shrouk leads the design language behind DBLSHOT work, shaping visuals that feel bold, polished, and commercially useful. She connects brand clarity with scroll-stopping creative." },
+  { name: "Shrouk Moustafa", role: "Senior Graphic Designer - Team Leader", motif: "design", image: "/media/team/editorial/shrouk.webp", video: "/media/team/editorial/shrouk-motion.mp4", bio: "Shrouk leads the design language behind DBLSHOT work, shaping visuals that feel bold, polished, and commercially useful. She connects brand clarity with scroll-stopping creative." },
   { name: "Mariam Ayman", role: "Performance Marketing Supervisor", motif: "performance", image: "/media/team/editorial/mariam.webp", bio: "Mariam supervises performance execution with a close eye on pacing, learning cycles, and results. She helps campaigns stay organized, responsive, and aligned with client targets." },
   { name: "Rodaina Eldahan", role: "Performance Marketing Specialist", motif: "performance", image: "/media/team/editorial/rodaina.webp", bio: "Rodaina works across media buying, campaign setup, and optimization details. She brings the careful follow-through that keeps performance work clean and accountable." },
   { name: "Laila Sayed", role: "Marketing Performance Analyst", motif: "analytics", image: "/media/team/editorial/laila.webp", bio: "Laila reads the numbers behind the noise. She turns campaign data into useful insights, helping the team spot what is working, what needs pressure, and where the next opportunity sits." },

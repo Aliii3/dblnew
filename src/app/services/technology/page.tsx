@@ -36,8 +36,8 @@ export default function TechnologyPage() {
         <div className="ads-banner">
           <Image
             className="ads-banner__img"
-            src="/media/services/website-development-banner.png"
-            alt="Websites that bring brands to life — Shopify, WordPress and native app builds shown as live storefronts for Sekem, Spritz, Nourish and more."
+            src="/media/services/technology-banner.png"
+            alt="Where brands come to life — Shopify, WordPress and native app builds shown as live storefronts for Sekem, Spritz, Nourish and more."
             width={2780}
             height={878}
             priority

@@ -69,6 +69,21 @@ const headingStyle = {
 export default function CommercePage() {
   return (
     <SiteProvider activeNav="services" innerPage>
+      {/* Full-bleed band at the artwork's natural 3.2:1, same as the Amazon Ads page */}
+      <section className="ads-banner-section">
+        <div className="ads-banner">
+          <Image
+            className="ads-banner__img"
+            src="/media/services/commerce-banner.png"
+            alt="Your brand belongs at the top of the shelf — Amazon, HungerStation, and noon storefronts connected around marketplace integration, store optimization, and sales growth."
+            width={2780}
+            height={878}
+            priority
+            sizes="100vw"
+          />
+        </div>
+      </section>
+
       <PageHero
         label="Commerce"
         title={

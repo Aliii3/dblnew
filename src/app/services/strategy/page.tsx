@@ -35,10 +35,15 @@ const STEPS = [
 /** Brand logos for the consultancy list. Add a file to /public/media/clients/
  *  and map it here — brands without a logo fall back to a lettered badge. */
 const PROJECT_LOGOS: Record<string, string> = {
+  "AlCazar Furniture": "/media/clients/alcazar-furniture.png",
+  "INDE": "/media/clients/inde.png",
   "Beta Egypt Real Estate": "/media/clients/Yxp3JNTlEq3Q0EJ9foE0QNlnY.png",
   "SEKEM Premium": "/media/clients/IEzNPAmU7hScrRAWBnLGcUCw7g.png",
-  "iSiS × SEKEM": "/media/clients/WQakjqWJVTi6703foxvfgAj0Oc.png",
+  "Mohamed Ramadan": "/media/clients/mohamed-ramadan.png",
   "Halwa & Tahini": "/media/clients/E46KWmdgoYtOJu56riHrVue3xo.png",
+  "Lucid Training Center": "/media/clients/lucid-training.png",
+  "iSiS × SEKEM": "/media/clients/WQakjqWJVTi6703foxvfgAj0Oc.png",
+  "Grip Socks": "/media/clients/grip-socks.png",
   "Turkish Coffee Brand": "/media/clients/OxNEFwVLqzVekRKf0ZzULVeVRM.png",
 };
 
@@ -111,9 +116,50 @@ const PROJECTS: { sector: string; client: string; year: string; desc: string }[]
   },
 ];
 
+/** Two flagship consultancy engagements, shown as media pillars above the full project grid. */
+const FEATURED_BRANDS: {
+  image: string;
+  imageAlt: string;
+  kicker: string;
+  title: string;
+  body: string;
+}[] = [
+  {
+    image: "/media/services/strategy-pillar-zeina.png",
+    imageAlt:
+      "Zeina brand campaign assets fanned from a branded folder — a spice-jar lifestyle shoot, a mobile ordering screen across grocery delivery apps, and an in-store retail display.",
+    kicker: "FMCG · Spices & Seasoning · Brand Refresh · Retail & E-Commerce",
+    title: "Zeina — A Heritage Spice Brand, Rebuilt for Every Shelf",
+    body: "We led Zeina's brand refresh and go-to-market rollout, pairing a lifestyle-led content campaign with distribution across grocery delivery apps and a redesigned in-store retail presence — carrying the brand's heritage into a modern, multi-channel shopping experience.",
+  },
+  {
+    image: "/media/services/strategy-pillar-wingo.png",
+    imageAlt:
+      "Wingo brand campaign assets fanned from a branded folder — a summer beach-day starter pack, a protein-led mascot campaign, and breakfast-moment social content.",
+    kicker: "QSR & Food · Seasonal Campaigns · Social Content",
+    title: "Wingo — Seasonal Strategy That Keeps a Food Brand Top of Mind",
+    body: "We built Wingo's always-on content calendar around the moments that matter to its audience — summer beach days, protein-forward positioning, and everyday breakfast routines — turning seasonal shifts into a steady stream of scroll-stopping campaigns.",
+  },
+];
+
 export default function StrategyPage() {
   return (
     <SiteProvider activeNav="services" innerPage>
+      {/* Full-bleed band at the artwork's natural 3.2:1, same as the Amazon Ads page */}
+      <section className="ads-banner-section">
+        <div className="ads-banner">
+          <Image
+            className="ads-banner__img"
+            src="/media/services/strategy-banner.png"
+            alt="Strategy before execution — a consultant reviewing market research dashboards covering target audience, competitive landscape, and brand positioning for Scommacce, Turkava, and other client engagements."
+            width={2780}
+            height={878}
+            priority
+            sizes="100vw"
+          />
+        </div>
+      </section>
+
       <PageHero
         label="Strategy & Consultancy"
         title={
@@ -187,6 +233,22 @@ export default function StrategyPage() {
             From FMCG launches to rebrands and go-to-market strategy — a decade-plus of consultancy
             across {PROJECTS.length} brands and {new Set(PROJECTS.map((p) => p.sector)).size} sectors.
           </p>
+
+          <div className="pillars reveal-stagger" style={{ marginBottom: "3rem" }}>
+            {FEATURED_BRANDS.map((b) => (
+              <article className="pillar pillar--media" key={b.title}>
+                <div className="pillar__content">
+                  <span className="pillar__kicker">{b.kicker}</span>
+                  <h3 className="pillar__title">{b.title}</h3>
+                  <p className="pillar__body">{b.body}</p>
+                </div>
+                <div className="pillar__media pillar__media--photo" style={{ "--pillar-media-ratio": "1256 / 888" } as React.CSSProperties}>
+                  <Image src={b.image} alt={b.imageAlt} fill sizes="(max-width: 900px) 100vw, 560px" />
+                </div>
+              </article>
+            ))}
+          </div>
+
           <div className="mr-grid reveal-stagger">
             {PROJECTS.map((p) => (
               <article className="mr-card" key={p.client}>

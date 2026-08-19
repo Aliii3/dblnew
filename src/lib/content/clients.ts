@@ -41,6 +41,8 @@ export const CASE_STUDY_LOGOS: Record<string, string> = {
   rehana: "/media/case-studies/logos/rehana.jpg",
   spritz: "/media/clients/ibhVBT9CyJYkeU3S1xgOmYojaw.png",
   raw: "/media/clients/oh76Ahmwjefn0XKpodDl2yAn44E.png",
+  wingo: "/media/case-studies/logos/wingo.png",
+  zeina: "/media/case-studies/logos/zeina.png",
 };
 
 /** Brand name for a logo path, or "" if not identified. */

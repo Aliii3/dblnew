@@ -38,6 +38,21 @@ const WHY_PARTNER = [
 export default function PerformancePage() {
   return (
     <SiteProvider activeNav="services" innerPage>
+      {/* Full-bleed band at the artwork's natural 3.2:1, same as the Amazon Ads page */}
+      <section className="ads-banner-section">
+        <div className="ads-banner">
+          <Image
+            className="ads-banner__img"
+            src="/media/services/performance-banner.png"
+            alt="Turn followers into loyal customers — a Meta Ads Manager dashboard with ROAS, SEO, CRO, and analytics panels alongside a live Spritz storefront."
+            width={2780}
+            height={878}
+            priority
+            sizes="100vw"
+          />
+        </div>
+      </section>
+
       <PageHero
         label="Performance"
         title={
@@ -47,21 +62,6 @@ export default function PerformancePage() {
         }
         subtitle="Paid media across Meta, Google, TikTok, and Snapchat — structured, tested, and optimized daily around one goal: measurable growth."
       />
-
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <div className="cs-slide reveal" style={{ overflow: "hidden" }}>
-            <Image
-              src="/media/services/pillar-02-advertising.png"
-              alt="Performance dashboard showing sales and units by brand over time, with brand and category contribution charts."
-              width={1256}
-              height={888}
-              priority
-              style={{ width: "100%", height: "auto", display: "block" }}
-            />
-          </div>
-        </div>
-      </section>
 
       <section className="section">
         <div className="container content-shell content-prose">
