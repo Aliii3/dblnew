@@ -35,7 +35,7 @@ export const NAV_ITEMS: NavItem[] = [
   { key: "home", label: "Home", href: "/" },
   {
     key: "services",
-    label: "Solutions",
+    label: "Our Services",
     href: "/services",
     children: [
       { label: "Strategy", href: "/services/strategy" },
@@ -43,7 +43,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Performance", href: "/services/performance" },
       { label: "Commerce", href: "/services/commerce" },
       { label: "Amazon Growth", href: "/services/amazon-growth" },
-      { label: "Technology", href: "/services/technology" },
+      { label: "Website Development", href: "/services/technology" },
     ],
   },
   { key: "impact", label: "Deep Impact", href: "/deep-impact" },

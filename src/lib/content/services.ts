@@ -30,7 +30,7 @@ export const SERVICES = [
     icon: "amazon",
   },
   {
-    title: "Technology",
+    title: "Website Development",
     description: "High-converting websites built for performance, CRO, and brand growth.",
     href: "/services/technology",
     icon: "web",

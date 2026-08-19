@@ -5,7 +5,7 @@ import { PageCTA } from "@/components/ui/PageCTA";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Technology",
+  title: "Website Development",
   description:
     "Conversion-focused websites by DBLSHOT — e-commerce and lead-generation builds on WordPress, Framer, and native platforms with CRO baked in.",
   path: "/services/technology",
@@ -47,10 +47,10 @@ export default function TechnologyPage() {
       </section>
 
       <PageHero
-        label="Technology"
+        label="Website Development"
         title={
           <>
-            Technology <span className="text-gold">& Development</span>
+            Website <span className="text-gold">Development</span>
           </>
         }
         subtitle="Digital experiences that support growth, strengthen brand presence, and guide users toward action."

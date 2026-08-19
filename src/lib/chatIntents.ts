@@ -63,7 +63,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     ],
     answer:
       "We build conversion-focused websites — e-commerce and lead-gen builds on WordPress, Framer, and native platforms, with CRO baked in.",
-    links: [{ label: "Technology", href: "/services/technology" }],
+    links: [{ label: "Website Development", href: "/services/technology" }],
   },
   {
     id: "branding",
@@ -101,7 +101,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     id: "services",
     keywords: ["service", "services", "what do you do", "offer", "help with", "capabilities"],
     answer:
-      "We cover Strategy, Creative, Performance, Commerce, Amazon Growth, and Technology — all built for FMCG growth.",
+      "We cover Strategy, Creative, Performance, Commerce, Amazon Growth, and Website Development — all built for FMCG growth.",
     links: [{ label: "All Services", href: "/services" }],
   },
   {
