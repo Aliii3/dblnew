@@ -200,14 +200,17 @@ export function HomePage() {
           <SectionHeading center>
             Impact <span className="text-gold">Process</span>
           </SectionHeading>
-          <ol className="process-row reveal-stagger">
+          <ol className="process-timeline reveal-stagger">
             {PROCESS_STEPS.map((step) => (
-              <li className="process-node" key={step.num}>
-                <span className="process-node__num">{String(step.num).padStart(2, "0")}</span>
-                <span className="process-node__icon">
+              <li className="process-step" key={step.num}>
+                <span className="process-step__marker">
                   <ProcessIcon name={step.icon} />
+                  <span className="process-step__num">{step.num}</span>
                 </span>
-                <span className="process-node__title">{step.title}</span>
+                <div className="process-step__content">
+                  <h3 className="process-step__title">{step.title}</h3>
+                  <p className="process-step__desc">{step.description}</p>
+                </div>
               </li>
             ))}
           </ol>
