@@ -272,20 +272,6 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__item--dropdown.is-open .nav__trigg
   color: #fdf9ec;
 }
 body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec; }
-/* Nav floats with no background of its own — over the dark footer (short
-   pages scrolled to the bottom) its default navy content goes unreadable.
-   Header.tsx toggles this via IntersectionObserver against .footer. */
-.nav--on-dark .nav__links a,
-.nav--on-dark .nav__trigger {
-  color: rgba(253, 249, 236, 0.85);
-}
-.nav--on-dark .nav__links a:hover,
-.nav--on-dark .nav__trigger:hover,
-.nav--on-dark .nav__trigger.is-active,
-.nav--on-dark .nav__item--dropdown.is-open .nav__trigger {
-  color: #fdf9ec;
-}
-.nav--on-dark .nav__toggle span { background: #fdf9ec; }
 .nav__inner {
   display: flex;
   align-items: center;
@@ -1181,7 +1167,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 .proven-bento {
   display: grid;
   gap: clamp(1.5rem, 4vw, 3rem);
-  padding: clamp(1.5rem, 4vw, 2.5rem);
+  padding: clamp(1.75rem, 5vw, 3rem);
   border: 1px solid var(--ink);
   border-radius: 1.75rem;
 }
@@ -2437,8 +2423,8 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   position: relative;
   margin-top: clamp(2rem, 5vw, 4rem);
   padding: clamp(3.5rem, 7vw, 5.5rem) 0 0;
-  background: var(--ink);
-  color: rgba(253, 249, 236, 0.68);
+  background: var(--gold);
+  color: rgba(26, 21, 16, 0.7);
 }
 .footer::before {
   content: "";
@@ -2447,7 +2433,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(252, 185, 18, 0.55), transparent);
+  background: rgba(26, 21, 16, 0.2);
 }
 .footer__top {
   display: grid;
@@ -2472,7 +2458,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   max-width: 34ch;
   font-size: 0.95rem;
   line-height: 1.6;
-  color: rgba(253, 249, 236, 0.6);
+  color: rgba(26, 21, 16, 0.65);
 }
 .footer__brand-actions {
   display: flex;
@@ -2483,6 +2469,17 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 @media (max-width: 620px) {
   .footer__brand { align-items: center; text-align: center; }
   .footer__brand-actions { justify-content: center; }
+}
+/* The gold footer background would otherwise swallow the gold-on-gold
+   primary button — invert it for contrast. */
+.footer .btn--primary {
+  background: var(--ink);
+  color: var(--gold);
+  border-color: var(--ink);
+}
+.footer .btn--primary:hover {
+  background: transparent;
+  color: var(--ink);
 }
 
 .footer__cols {
@@ -2498,7 +2495,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin: 0 0 1.1rem;
-  color: rgba(253, 249, 236, 0.92);
+  color: var(--ink);
 }
 .footer ul {
   list-style: none;
@@ -2509,18 +2506,18 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 /* Exclude buttons — otherwise this beats .btn--primary and paints the label
    muted on gold, then gold-on-gold (invisible) on hover. */
 .footer a:not(.btn) {
-  color: rgba(253, 249, 236, 0.62);
+  color: rgba(26, 21, 16, 0.65);
   font-size: 0.9rem;
   transition: color 0.2s;
 }
-.footer a:not(.btn):hover { color: var(--gold); }
+.footer a:not(.btn):hover { color: var(--ink); }
 
 .footer__newsletter .newsletter {
   max-width: 320px;
   padding: 1.25rem;
-  border: 1px solid rgba(253, 249, 236, 0.14);
+  border: 1px solid rgba(26, 21, 16, 0.16);
   border-radius: 0.75rem;
-  background: rgba(253, 249, 236, 0.04);
+  background: rgba(253, 249, 236, 0.4);
 }
 @media (max-width: 900px) { .footer__newsletter .newsletter { max-width: 420px; } }
 .newsletter {
@@ -2531,7 +2528,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 }
 .newsletter__label {
   font-size: 0.8rem;
-  color: rgba(253, 249, 236, 0.6);
+  color: rgba(26, 21, 16, 0.65);
   letter-spacing: 0.01em;
 }
 .newsletter__row {
@@ -2543,19 +2540,19 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   min-width: 0;
   padding: 0.6rem 0.85rem;
   border-radius: 0.5rem;
-  border: 1px solid rgba(253, 249, 236, 0.18);
-  background: rgba(253, 249, 236, 0.06);
-  color: #fdf9ec;
+  border: 1px solid rgba(26, 21, 16, 0.2);
+  background: rgba(253, 249, 236, 0.55);
+  color: var(--ink);
   font-size: 0.9rem;
   transition: border-color 0.2s;
 }
-.newsletter__input::placeholder { color: rgba(253, 249, 236, 0.4); }
+.newsletter__input::placeholder { color: rgba(26, 21, 16, 0.45); }
 .newsletter__input:focus {
   outline: none;
-  border-color: var(--gold);
+  border-color: var(--ink);
 }
 .newsletter__input[aria-invalid="true"] {
-  border-color: #ff6b6b;
+  border-color: #c0392b;
 }
 .newsletter__btn {
   padding: 0.6rem 1.1rem;
@@ -2565,13 +2562,13 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 .newsletter__done {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--gold);
+  color: var(--ink);
   font-weight: 600;
 }
 .newsletter__error {
   margin: 0;
   font-size: 0.8rem;
-  color: #ff8f8f;
+  color: #a3271b;
 }
 
 .footer__social {
@@ -2584,27 +2581,27 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(253, 249, 236, 0.18);
+  border: 1px solid rgba(26, 21, 16, 0.2);
   display: grid;
   place-items: center;
-  color: rgba(253, 249, 236, 0.75);
+  color: var(--ink);
   transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
 }
 .footer__social a:hover {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: var(--ink);
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--gold);
   transform: translateY(-2px);
 }
 .footer__bottom {
   padding: 1.75rem 0;
-  border-top: 1px solid rgba(253, 249, 236, 0.12);
+  border-top: 1px solid rgba(26, 21, 16, 0.18);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
   font-size: 0.8rem;
-  color: rgba(253, 249, 236, 0.45);
+  color: rgba(26, 21, 16, 0.55);
 }
 
 /* Utilities */

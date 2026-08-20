@@ -1224,7 +1224,7 @@ body {
 .section::after {
   content: "";
   position: absolute;
-  inset: 1.1rem clamp(0.75rem, 4vw, 2.25rem);
+  inset: 1.5rem clamp(1.25rem, 5vw, 2.75rem);
   z-index: 0;
   border: 1px solid rgb(26 21 16 / 0.1);
   border-radius: clamp(1rem, 2.4vw, 1.6rem);

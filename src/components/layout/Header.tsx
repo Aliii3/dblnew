@@ -11,7 +11,6 @@ type HeaderProps = {
 
 export function Header({ active }: HeaderProps) {
   const [openKey, setOpenKey] = useState<NavKey | null>(null);
-  const [onDark, setOnDark] = useState(false);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -21,32 +20,14 @@ export function Header({ active }: HeaderProps) {
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
-  useEffect(() => {
-    // The nav has no background of its own, so its navy wordmark and icon
-    // go unreadable wherever it floats over the dark footer (short pages
-    // scrolled to the bottom). Watch for the footer entering the nav's own
-    // band at the top of the viewport and swap to the light variant there.
-    const footer = document.querySelector(".footer");
-    const navEl = document.getElementById("nav");
-    if (!footer || !navEl) return;
-
-    const navHeight = navEl.getBoundingClientRect().height || 80;
-    const observer = new IntersectionObserver(
-      ([entry]) => setOnDark(entry.isIntersecting),
-      { rootMargin: `-${navHeight}px 0px -${Math.max(window.innerHeight - navHeight, 0)}px 0px`, threshold: 0 },
-    );
-    observer.observe(footer);
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <>
-      <header className={`nav${onDark ? " nav--on-dark" : ""}`} id="nav">
+      <header className="nav" id="nav">
         <div className="container nav__inner">
           <Link className="nav__logo nav__logo--lockup" href="/">
             <Image
               className="nav__logo-img"
-              src={onDark ? "/brand/logo-lockup-white.png" : "/brand/logo-lockup-navy.png"}
+              src="/brand/logo-lockup-navy.png"
               alt="DBLSHOT — Performance Marketing and Consulting Agency"
               width={614}
               height={174}
