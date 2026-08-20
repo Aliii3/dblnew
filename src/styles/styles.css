@@ -763,6 +763,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   margin-top: clamp(-96px, -11vw, -70px);
   margin-bottom: clamp(1rem, 4vw, 2.5rem);
   pointer-events: none;
+  overflow: hidden;
 }
 .ticker-band {
   position: absolute;
