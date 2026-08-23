@@ -2082,10 +2082,11 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   margin-top: 0.75rem;
   color: var(--brand-blue);
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 7vw, 5.4rem);
+  font-size: clamp(1.6rem, 2.8vw, 2.6rem);
   font-weight: 900;
-  line-height: 0.9;
-  letter-spacing: -0.055em;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  overflow-wrap: break-word;
 }
 .team-modal__role {
   max-width: 30rem;
