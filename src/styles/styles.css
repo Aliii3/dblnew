@@ -2079,30 +2079,42 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   padding: clamp(0.35rem, 2vw, 1rem) clamp(0.3rem, 2vw, 1rem) clamp(0.5rem, 2vw, 1rem);
 }
 .team-modal__copy h3 {
-  margin-top: 0.75rem;
+  margin-top: 0.6rem;
   color: var(--brand-blue);
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 2.8vw, 2.6rem);
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
   font-weight: 900;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
   overflow-wrap: break-word;
 }
 .team-modal__role {
-  max-width: 30rem;
-  margin: 0.85rem 0 0;
-  color: var(--text-strong);
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 100%;
+  margin: 0.7rem 0 0;
+  padding: 0.4rem 0.9rem;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
   font-weight: 800;
-  line-height: 1.1;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  box-shadow: 0.16rem 0.16rem 0 rgb(26 21 16 / 0.16);
 }
 .team-modal__bio {
   max-width: 34rem;
-  margin: 1.2rem 0 0;
+  margin: 1.35rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 3px solid rgb(26 21 16 / 0.14);
   color: var(--text);
-  font-size: clamp(0.98rem, 1.7vw, 1.08rem);
-  line-height: 1.7;
+  font-size: clamp(1rem, 1.8vw, 1.12rem);
+  line-height: 1.75;
 }
 @media (max-width: 720px) {
   .team-modal {
