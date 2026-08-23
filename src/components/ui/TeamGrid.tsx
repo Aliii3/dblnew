@@ -91,15 +91,15 @@ export function TeamGrid({ members }: TeamGridProps) {
                   muted
                   loop
                   playsInline
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  style={{ width: "100%", height: "100%", objectFit: "contain" }}
                 />
               ) : (
                 <Image
                   src={selected.image}
                   alt={selected.name}
-                  width={560}
-                  height={700}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  width={1082}
+                  height={1454}
+                  style={{ width: "100%", height: "100%", objectFit: "contain" }}
                 />
               )}
               {selected.motif ? <TeamMotif name={selected.motif} /> : null}

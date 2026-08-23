@@ -2060,6 +2060,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 }
 .team-modal__photo {
   position: relative;
+  aspect-ratio: 1082 / 1454;
   min-height: 21rem;
   overflow: hidden;
   border: 1.5px solid var(--ink);
@@ -2068,9 +2069,6 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   box-shadow:
     0 0 0 0.35rem var(--navy-950),
     0 0 0 calc(0.35rem + 1px) var(--ink);
-}
-.team-modal__photo img {
-  filter: sepia(0.06) saturate(0.96) contrast(1.05) brightness(1.02);
 }
 .team-modal__photo .team-card__motif {
   top: 0.65rem;
@@ -2117,7 +2115,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   }
   .team-modal__photo {
     min-height: auto;
-    aspect-ratio: 4 / 4.7;
+    aspect-ratio: 1082 / 1454;
   }
   .team-modal__copy h3 {
     padding-right: 2rem;
