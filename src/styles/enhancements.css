@@ -919,7 +919,11 @@
 /* Slightly brighter than the standalone marquee so the logos read at this size */
 .marquee-wrap--inline .marquee__logo { opacity: 0.85; }
 
-/* ── Editorial nav + footer polish ── */
+/* ── Editorial nav + footer polish ──
+   The bar itself (.nav) stays a transparent positioning shell; .nav__inner is
+   the visible pill, and it now keeps one solid, constant background at every
+   scroll position and on every page — no more color shifting depending on
+   what's behind it. */
 .nav {
   padding: 0.85rem 0;
   background: transparent !important;
@@ -931,10 +935,12 @@
   position: relative;
   width: min(1280px, calc(100% - 3rem));
   padding: 0.75rem 1rem;
-  border: 0;
+  border: 1px solid rgb(26 21 16 / 0.08);
   border-radius: 999px;
-  background: transparent !important;
-  box-shadow: none !important;
+  background: var(--navy-950) !important;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.25),
+    0 8px 24px rgb(26 21 16 / 0.1) !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
@@ -945,10 +951,6 @@
   box-shadow: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-}
-.nav.is-scrolled .nav__inner {
-  background: transparent !important;
-  box-shadow: none !important;
 }
 .nav__logo--lockup {
   padding: 0;

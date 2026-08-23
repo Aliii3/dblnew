@@ -257,21 +257,6 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
-/* Pages with a full-bleed photo hero (.hero2) need unscrolled nav text to
-   read on a dark image, not the cream page background. Pages that still use
-   the plain text PageHero (cream bg) keep the default dark nav text. */
-body:has(.hero2) .nav:not(.is-scrolled) .nav__links a,
-body:has(.hero2) .nav:not(.is-scrolled) .nav__trigger {
-  color: rgba(253, 249, 236, 0.85);
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
-}
-body:has(.hero2) .nav:not(.is-scrolled) .nav__links a:hover,
-body:has(.hero2) .nav:not(.is-scrolled) .nav__trigger:hover,
-body:has(.hero2) .nav:not(.is-scrolled) .nav__trigger.is-active,
-body:has(.hero2) .nav:not(.is-scrolled) .nav__item--dropdown.is-open .nav__trigger {
-  color: #fdf9ec;
-}
-body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec; }
 .nav__inner {
   display: flex;
   align-items: center;
