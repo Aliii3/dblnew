@@ -2181,6 +2181,17 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   transform: rotate(-0.8deg) translate(0.18rem, -0.18rem);
   opacity: 0.72;
 }
+/* The featured card spans 2 grid rows, so the same 52%-of-height peek
+   used on regular cards way overshoots its image into the body text —
+   scale it down to match the same subtle sliver, and halve the tilt so
+   rotating a much bigger shape doesn't read as visibly crooked. */
+.blog-card--featured::before {
+  height: 47%;
+  transform: rotate(0.6deg);
+}
+.blog-card--featured:hover::before {
+  transform: rotate(-0.4deg) translate(0.18rem, -0.18rem);
+}
 .blog-card__img {
   position: relative;
   aspect-ratio: 4 / 3;
