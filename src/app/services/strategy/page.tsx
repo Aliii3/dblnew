@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { SiteProvider } from "@/components/layout/SiteProvider";
@@ -192,10 +193,19 @@ export default function StrategyPage() {
           </h2>
           <div className="cs-steps reveal-stagger">
             {STEPS.map((step, i) => (
-              <div className="cs-step" key={step}>
-                <span className="cs-step__num">{String(i + 1).padStart(2, "0")}</span>
-                <span className="cs-step__title">{step}</span>
-              </div>
+              <Fragment key={step}>
+                <div className="cs-step">
+                  <span className="cs-step__num">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="cs-step__title">{step}</span>
+                </div>
+                {i < STEPS.length - 1 ? (
+                  <span className="cs-step__arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M4 12h15M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                ) : null}
+              </Fragment>
             ))}
           </div>
         </div>
