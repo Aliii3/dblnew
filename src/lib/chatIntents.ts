@@ -43,7 +43,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     ],
     answer:
       "We run full e-commerce management across Amazon, Noon, Talabat Mart, HungerStation, Breadfast and more — listings, ads, promotions, brand stores, and live reporting.",
-    links: [{ label: "Commerce", href: "/services/commerce" }],
+    links: [{ label: "E-Commerce", href: "/services/commerce" }],
   },
   {
     id: "social",
@@ -101,7 +101,7 @@ export const CHAT_INTENTS: ChatIntent[] = [
     id: "services",
     keywords: ["service", "services", "what do you do", "offer", "help with", "capabilities"],
     answer:
-      "We cover Strategy, Creative, Performance, Commerce, Amazon Growth, and Website Development — all built for FMCG growth.",
+      "We cover Strategy, Creative, Performance, E-Commerce, Amazon Growth, and Website Development — all built for FMCG growth.",
     links: [{ label: "All Services", href: "/services" }],
   },
   {

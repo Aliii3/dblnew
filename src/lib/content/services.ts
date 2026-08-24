@@ -18,7 +18,7 @@ export const SERVICES = [
     icon: "chart",
   },
   {
-    title: "Commerce",
+    title: "E-Commerce",
     description: "Full e-commerce management across Amazon, Noon, Breadfast, and GoodsMart.",
     href: "/services/commerce",
     icon: "cart",

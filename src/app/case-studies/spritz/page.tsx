@@ -87,7 +87,7 @@ const spec: CaseStudySpec = {
     { value: "11×", label: "ROAS" },
   ],
   related: [
-    { label: "Commerce", href: "/services/commerce" },
+    { label: "E-Commerce", href: "/services/commerce" },
     { label: "Amazon Growth", href: "/services/amazon-growth" },
     { label: "Technology", href: "/services/technology" },
     { label: "Performance", href: "/services/performance" },

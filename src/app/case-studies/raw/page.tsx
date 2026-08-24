@@ -69,7 +69,7 @@ const spec: CaseStudySpec = {
   ],
   related: [
     { label: "Amazon Growth", href: "/services/amazon-growth" },
-    { label: "Commerce", href: "/services/commerce" },
+    { label: "E-Commerce", href: "/services/commerce" },
   ],
 };
 

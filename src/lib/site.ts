@@ -41,7 +41,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Strategy", href: "/services/strategy" },
       { label: "Creative", href: "/services/branding" },
       { label: "Performance", href: "/services/performance" },
-      { label: "Commerce", href: "/services/commerce" },
+      { label: "E-Commerce", href: "/services/commerce" },
       { label: "Amazon Growth", href: "/services/amazon-growth" },
       { label: "Website Development", href: "/services/technology" },
     ],

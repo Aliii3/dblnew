@@ -6,7 +6,7 @@ import { PageCTA } from "@/components/ui/PageCTA";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Commerce Agency in Egypt | Amazon, Noon & Marketplace Growth",
+  title: "E-Commerce Agency in Egypt | Amazon, Noon & Marketplace Growth",
   description:
     "Dblshot is Egypt's leading e-commerce management agency for FMCG brands. We manage Amazon Egypt, Noon, Talabat Mart, HungerStation & more — catalogue optimization, ads, brand stores, and full-funnel growth. Let's own your shelf.",
   path: "/services/commerce",
@@ -85,10 +85,10 @@ export default function CommercePage() {
       </section>
 
       <PageHero
-        label="Commerce"
+        label="E-Commerce"
         title={
           <>
-            Commerce, Built for FMCG Brands That Want to{" "}
+            E-Commerce, Built for FMCG Brands That Want to{" "}
             <span className="text-gold">Lead</span>
           </>
         }
@@ -150,7 +150,7 @@ export default function CommercePage() {
       <section className="section section--glow">
         <div className="container content-shell">
           <h2 className="reveal" style={headingStyle}>
-            What Our Commerce Service Covers
+            What Our E-Commerce Service Covers
           </h2>
           <ul className="checklist reveal">
             {COVERS.map((item) => (
