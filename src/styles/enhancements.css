@@ -1232,6 +1232,11 @@ body {
   border-radius: clamp(1rem, 2.4vw, 1.6rem);
   pointer-events: none;
 }
+/* The section right after a hero shouldn't look boxed away from it — let
+   the intro copy read as a continuation of the hero, not a separate card. */
+.page-hero + .section::after {
+  display: none;
+}
 .section:nth-of-type(odd) {
   background:
     radial-gradient(circle at 88% 18%, rgb(236 224 126 / 0.18), transparent 20rem),
