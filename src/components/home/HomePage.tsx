@@ -273,7 +273,7 @@ export function HomePage() {
       <section className="section" id="work">
         <div className="container">
           <SectionHeading center>
-            The <span className="text-gold">Work</span>
+            Case <span className="text-gold">Studies</span>
           </SectionHeading>
           <div className="blogs-grid reveal-stagger">
             {workStudies.map((study) => (

@@ -62,7 +62,7 @@ export default function DeepImpactPage() {
       <section className="section">
         <div className="container">
           <SectionHeading center>
-            The <span className="text-gold">Work</span>
+            Case <span className="text-gold">Studies</span>
           </SectionHeading>
           <div className="blogs-grid reveal-stagger">
             {studies.map((study) => (
