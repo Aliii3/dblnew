@@ -115,7 +115,7 @@ export function HomePage() {
                           alt={clientName(src) || ""}
                           width={220}
                           height={92}
-                          style={{ width: "auto", height: 76, maxWidth: 238, objectFit: "contain" }}
+                          style={{ width: "auto", height: 104, maxWidth: 300, objectFit: "contain" }}
                         />
                       </span>
                     );
