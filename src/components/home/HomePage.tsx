@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ClientReviews } from "@/components/ui/ClientReviews";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { CaseStudyCard } from "@/components/ui/CaseStudyCard";
 import { HomeBlogCard } from "@/components/home/HomeBlogCard";
 import { HomeHero } from "@/components/home/HomeHero";
 import { CtaMarquee } from "@/components/ui/CtaMarquee";
@@ -16,6 +17,10 @@ import {
 } from "@/lib/content";
 import { HOME_BLOG_POSTS, HOME_TEAM, HOME, CLIENT_LOGOS } from "@/lib/content/home";
 import { clientName } from "@/lib/content/clients";
+import { getAllCaseStudies } from "@/lib/content/case-studies";
+
+/** Same shortlist as the Deep Impact page's "The Work" section. */
+const HOME_WORK_HIDDEN_SLUGS = new Set(["ltf", "zeina", "raw", "cimento-forca", "wingo"]);
 
 /**
  * Most client logos are plain white cutouts that need to be forced to a dark
@@ -40,6 +45,8 @@ const CLIENT_LOGO_ROWS = Array.from({ length: 5 }, (_, row) =>
 );
 
 export function HomePage() {
+  const workStudies = getAllCaseStudies().filter((s) => !HOME_WORK_HIDDEN_SLUGS.has(s.slug));
+
   return (
     <>
       <HomeHero />
@@ -257,6 +264,20 @@ export function HomePage() {
           <div className="blogs-grid reveal-stagger">
             {HOME_BLOG_POSTS.map((post, index) => (
               <HomeBlogCard key={post.slug + post.tag} post={post} index={index} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The Work */}
+      <section className="section" id="work">
+        <div className="container">
+          <SectionHeading center>
+            The <span className="text-gold">Work</span>
+          </SectionHeading>
+          <div className="blogs-grid reveal-stagger">
+            {workStudies.map((study) => (
+              <CaseStudyCard key={study.slug} study={study} />
             ))}
           </div>
         </div>
