@@ -774,17 +774,19 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  border: none;
-  background: var(--gold);
-  color: var(--ink);
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--gold);
   display: grid;
   place-items: center;
   font-size: 1.5rem;
-  box-shadow: 0 0 40px var(--gold-dim);
-  transition: transform 0.3s var(--ease-out-expo);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s var(--ease-out-expo), background 0.3s;
   cursor: pointer;
 }
-.video-frame:hover .video-frame__play { transform: scale(1.08); }
+.video-frame:hover .video-frame__play { transform: scale(1.08); background: rgba(255, 255, 255, 0.2); }
 .video-frame--playing .video-frame__play { display: none; }
 
 .nav__links a.is-active { color: var(--text-strong); }
