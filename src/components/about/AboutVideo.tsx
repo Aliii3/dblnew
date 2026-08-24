@@ -29,7 +29,6 @@ export function AboutVideo({ src, poster }: AboutVideoProps) {
         ref={videoRef}
         className="video-frame__video"
         src={src}
-        poster={poster}
         preload="metadata"
         controls={playing}
         playsInline
@@ -37,6 +36,10 @@ export function AboutVideo({ src, poster }: AboutVideoProps) {
           if (videoRef.current?.currentTime === 0) setPlaying(false);
         }}
       />
+      {!playing && poster ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img className="video-frame__poster" src={poster} alt="" aria-hidden="true" />
+      ) : null}
       {!playing ? (
         <button
           type="button"

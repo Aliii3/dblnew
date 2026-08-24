@@ -3,7 +3,7 @@ export const ABOUT_COPY = {
   heroHighlight: "Story",
   heroSubtitle: "Meet Radwa Fathi, the Bold Architect of Egyptian Brands.",
   videoUrl: "/brand/about-story.mp4",
-  videoPoster: "/media/team/radwa.png",
+  videoPoster: "/brand/logo-lockup-navy.png",
   paragraphs: [
       "Dblshot is a strategic performance marketing and e-commerce partner dedicated to helping FMCG brands achieve sustainable growth across Egypt and the GCC. Specializing in e-commerce full management, Amazon Ads, performance marketing, website development, and CRO, we combine data-driven insights with creative solutions to craft strategies that drive measurable business outcomes. Our approach goes beyond traditional agency work – we focus on building long-term success through a deep understanding of your industry, audience, and growth potential.",
       "At Dblshot, we work hand-in-hand with brands to refine their digital presence, optimize their marketing efforts, and create the right conditions for scalable growth. With over 20 years of experience, Radwa Fathi, our CEO, blends analytical precision with visionary thinking to lead the company and guide brands through complex challenges. Her leadership is rooted in a commitment to not just achieving short-term goals but empowering brands to scale with clarity and purpose.",
