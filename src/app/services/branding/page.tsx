@@ -40,8 +40,8 @@ export default function BrandingPage() {
         <div className="ads-banner">
           <Image
             className="ads-banner__img"
-            src="/media/services/branding-banner.png"
-            alt="Branding that transforms perception — a designer reworking the Zeina identity, shown as an old-branding versus new-branding comparison across logo and packaging."
+            src="/media/services/branding-banner-social.png"
+            alt="Social media that moves brands — Zeina, BEC, Spritz, Nourish, and Wingo Instagram profiles fanned out against a glowing tech backdrop."
             width={2780}
             height={878}
             priority
