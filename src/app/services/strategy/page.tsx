@@ -183,27 +183,6 @@ export default function StrategyPage() {
         </div>
       </section>
 
-      {/* Our Services */}
-      <section className="section section--glow">
-        <div className="container">
-          <span className="section-label reveal">Our Services</span>
-          <h2 className="reveal" style={{ fontSize: "clamp(1.6rem,4vw,2.4rem)", margin: "0.5rem 0 2.5rem", color: "#1f3465" }}>
-            A comprehensive range of <span className="text-gold">marketing services</span>
-          </h2>
-          <div className="services-grid services-grid--enhanced reveal-stagger">
-            {SERVICES.map((s) => (
-              <article className="service-card" key={s.title}>
-                <div className="service-card__icon">
-                  <ServiceIcon name={s.icon} />
-                </div>
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* How it works */}
       <section className="section">
         <div className="container">
@@ -273,6 +252,27 @@ export default function StrategyPage() {
                   <h3 className="mr-card__client">{p.client}</h3>
                 </div>
                 <p className="mr-card__desc">{p.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services */}
+      <section className="section section--glow">
+        <div className="container">
+          <span className="section-label reveal">Our Services</span>
+          <h2 className="reveal" style={{ fontSize: "clamp(1.6rem,4vw,2.4rem)", margin: "0.5rem 0 2.5rem", color: "#1f3465" }}>
+            A comprehensive range of <span className="text-gold">marketing services</span>
+          </h2>
+          <div className="services-grid services-grid--enhanced reveal-stagger">
+            {SERVICES.map((s) => (
+              <article className="service-card" key={s.title}>
+                <div className="service-card__icon">
+                  <ServiceIcon name={s.icon} />
+                </div>
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
               </article>
             ))}
           </div>
