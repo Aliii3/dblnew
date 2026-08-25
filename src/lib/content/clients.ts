@@ -12,7 +12,6 @@ export const CLIENT_NAMES: Record<string, string> = {
   "/media/clients/BqYZIQd0myRH2eBJlAzVEYH96o8.png": "Richie",
   "/media/clients/CLTwqjZEuRq3zFWIFmblGX8j3P8.png": "BEC Arabia",
   "/media/clients/E46KWmdgoYtOJu56riHrVue3xo.png": "Halwani Bros",
-  "/media/clients/FVmqnvYOI3Y4uNVqNOSqB5Izak.png": "Dolphin",
   "/media/clients/GqkVRBjRVrYuLfBJEEJFfArxes.png": "Vebix",
   "/media/clients/IEzNPAmU7hScrRAWBnLGcUCw7g.png": "Sekem",
   "/media/clients/JnU9HgiqMBLi5Pun5ZVO9kVWU0.png": "Puvana",
