@@ -11,10 +11,6 @@ export type CSSection = {
   paragraphs?: string[];
   bullets?: string[];
   stats?: CSStat[];
-  /** Optional campaign/creative banner shown below this section's copy, in
-   *  the same rounded card treatment as the hero image/video. */
-  image?: string;
-  imageAlt?: string;
 };
 export type CSSwatch = { name: string; hex: string };
 export type CSRelated = { label: string; href: string };
@@ -25,6 +21,11 @@ export type CaseStudySpec = {
   brand: React.ReactNode;
   tagline: string;
   meta: { label: string; value: string }[];
+  /** Full-bleed campaign banner above the title — a one-off page header
+   *  distinct from the standard text hero, for a case study built around a
+   *  specific seasonal creative. */
+  bannerImage?: string;
+  bannerAlt?: string;
   heroImage?: string;
   /** Shown in place of heroImage when set. heroImage doubles as its poster. */
   heroVideo?: string;
@@ -52,6 +53,20 @@ function StatRow({ stats }: { stats: CSStat[] }) {
 export function CaseStudyDetail({ spec }: { spec: CaseStudySpec }) {
   return (
     <SiteProvider activeNav="services" innerPage>
+      {spec.bannerImage ? (
+        <div className="cs-campaign-banner">
+          <Image
+            src={spec.bannerImage}
+            alt={spec.bannerAlt || ""}
+            width={2048}
+            height={1024}
+            priority
+            sizes="100vw"
+            className="cs-campaign-banner__img"
+          />
+        </div>
+      ) : null}
+
       {/* Hero */}
       <section className="cs-detail-hero">
         <div className="container">
@@ -142,17 +157,6 @@ export function CaseStudyDetail({ spec }: { spec: CaseStudySpec }) {
                     <li key={b}>{b}</li>
                   ))}
                 </ul>
-              ) : null}
-              {sec.image ? (
-                <div className="cs-slide cs-block__image reveal" style={{ overflow: "hidden" }}>
-                  <Image
-                    src={sec.image}
-                    alt={sec.imageAlt || ""}
-                    width={2048}
-                    height={1024}
-                    style={{ width: "100%", height: "auto", display: "block" }}
-                  />
-                </div>
               ) : null}
               {sec.stats ? <StatRow stats={sec.stats} /> : null}
             </div>
