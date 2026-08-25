@@ -1227,13 +1227,15 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   justify-items: center;
   opacity: 0;
   transform: translateY(8px) scale(0.98);
-  animation: logo-set-cycle 15s infinite;
+  animation: logo-set-cycle 21s infinite;
 }
 .logo-row__line:nth-child(1) { animation-delay: 0s; }
 .logo-row__line:nth-child(2) { animation-delay: 3s; }
 .logo-row__line:nth-child(3) { animation-delay: 6s; }
 .logo-row__line:nth-child(4) { animation-delay: 9s; }
 .logo-row__line:nth-child(5) { animation-delay: 12s; }
+.logo-row__line:nth-child(6) { animation-delay: 15s; }
+.logo-row__line:nth-child(7) { animation-delay: 18s; }
 @keyframes logo-set-cycle {
   0% { opacity: 0; transform: translateY(8px) scale(0.98); }
   5% { opacity: 1; transform: translateY(0) scale(1); }

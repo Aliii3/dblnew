@@ -33,10 +33,19 @@ const NATURAL_COLOR_LOGOS = [
   "YyXtvAwxSzVL7lH0Fo6FXVepg2k", // CPC
   "co3FeUMtKNr44JgE4T6z41lYE", // Vogelpark
   "JnU9HgiqMBLi5Pun5ZVO9kVWU0", // Puvana
+  "CLTwqjZEuRq3zFWIFmblGX8j3P8", // BEC Arabia
+  "gfamily", // G Family
+  "bobs-bake", // Bob's Bake
+  "manasah", // Manasah
+  "wingo", // Wingo
+  "jozoor", // Jozoor
+  "zeina", // Zeina
 ];
 
-const CLIENT_LOGO_ROWS = Array.from({ length: 5 }, (_, row) =>
-  CLIENT_LOGOS.slice(row * 5, row * 5 + 5)
+const LOGO_ROW_SIZE = 5;
+const CLIENT_LOGO_ROWS = Array.from(
+  { length: Math.ceil(CLIENT_LOGOS.length / LOGO_ROW_SIZE) },
+  (_, row) => CLIENT_LOGOS.slice(row * LOGO_ROW_SIZE, row * LOGO_ROW_SIZE + LOGO_ROW_SIZE)
 );
 
 export function HomePage() {
