@@ -21,9 +21,8 @@ export default function AboutPage() {
       <div className="about-page">
         <PhotoHero
           id="about-hero"
-          image="/media/team/radwa.png"
-          objectPosition="50% 46%"
-          zoom={1.7}
+          image="/media/stock/offer-lifestyle-placeholder.jpg"
+          objectPosition="50% 15%"
           eyebrow="About Dblshot"
           title={
             <>
