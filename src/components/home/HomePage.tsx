@@ -83,7 +83,16 @@ export function HomePage() {
                 <Image src="/media/case-studies/spritz-kitchen-essentials.jpg" alt="Spritz Kitchen Essentials — a DBLSHOT client" width={2048} height={700} />
               </div>
               <div className="bento__tile bento__tile--bottom">
-                <Image src="/media/case-studies/isis-teas.jpg" alt="ISIS Organic — a DBLSHOT client" width={2400} height={1260} />
+                <video
+                  src="/media/case-studies/isis-water.mp4"
+                  poster="/media/case-studies/isis-teas.jpg"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label="ISIS Organic — a DBLSHOT client"
+                />
               </div>
             </div>
             <Link className="btn btn--primary bento__cta" href="/about">

@@ -876,7 +876,8 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 }
 .bento__tile--top { border-radius: 1.5rem; }
 .bento__tile:hover { opacity: 0.92; }
-.bento__tile img {
+.bento__tile img,
+.bento__tile video {
   width: 100%;
   height: 100%;
   object-fit: cover;
