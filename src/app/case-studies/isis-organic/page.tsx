@@ -26,6 +26,7 @@ const spec: CaseStudySpec = {
   ],
   heroImage: "/media/case-studies/ecommerce/p05.jpg",
   heroVideo: "/media/case-studies/isis-water.mp4",
+  heroVideoPoster: "/media/case-studies/isis-organic-video-poster.png",
   heroStats: [
     { value: "2,740%", label: "Amazon YoY growth" },
     { value: "245%", label: "Total e-commerce growth" },
