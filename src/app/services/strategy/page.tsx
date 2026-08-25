@@ -44,6 +44,7 @@ const PROJECT_LOGOS: Record<string, string> = {
   "Halwa & Tahini": "/media/clients/E46KWmdgoYtOJu56riHrVue3xo.png",
   "Lucid Training Center": "/media/clients/lucid-training.png",
   "iSiS × SEKEM": "/media/clients/WQakjqWJVTi6703foxvfgAj0Oc.png",
+  "Mozambique Launch": "/media/clients/cimento-forca.png",
   "Grip Socks": "/media/clients/grip-socks.png",
   "Turkish Coffee Brand": "/media/clients/OxNEFwVLqzVekRKf0ZzULVeVRM.png",
 };
