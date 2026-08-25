@@ -29,8 +29,14 @@ export const CLIENT_NAMES: Record<string, string> = {
   "/media/clients/naIlI6kpQjDap5iP8uW4rrBbllo.png": "Aroma",
   "/media/clients/oh76Ahmwjefn0XKpodDl2yAn44E.png": "RAW",
   "/media/clients/zhJnUdLlvWHOokcQDo7f55XBM.png": "Asfour Crystal",
-  // Not confidently identified (left unlabeled):
-  // "/media/clients/JblLmx3kUH48WtdXwHvUdj3edI0.png" — bold abstract mark
+  "/media/clients/gfamily.png": "G Family",
+  "/media/clients/bobs-bake.png": "Bob's Bake",
+  "/media/clients/manasah.png": "Manasah",
+  "/media/clients/wingo.png": "Wingo",
+  "/media/clients/jozoor.png": "Jozoor",
+  "/media/clients/rizkallah-art-foundation.png": "Rizkallah Art Foundation",
+  "/media/clients/zeina.png": "Zeina",
+  "/media/clients/nourish.png": "Nourish",
 };
 
 /** Brand logo file for a case study slug (only where confidently matched).
