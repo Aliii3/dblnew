@@ -839,6 +839,7 @@
   margin: 0 0 1.1rem;
 }
 .cs-block__p { color: var(--muted); line-height: 1.75; margin: 0 0 1rem; }
+.cs-block__image { margin: 0.5rem 0 1.5rem; }
 .cs-block .cs-stats { margin-top: 1.5rem; }
 
 .cs-palette {
