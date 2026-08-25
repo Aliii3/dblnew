@@ -29,6 +29,11 @@ export type CaseStudySpec = {
   heroImage?: string;
   /** Shown in place of heroImage when set. heroImage doubles as its poster. */
   heroVideo?: string;
+  /** Poster for heroVideo. Falls back to the brand logo (CASE_STUDY_LOGOS)
+   *  when unset — but object-fit:contain stretches a wide logo to fill the
+   *  16:9 box, so a video poster generally wants its own pre-composed image
+   *  with the logo shown small and centered, not the raw logo file. */
+  heroVideoPoster?: string;
   heroStats: CSStat[];
   sections: CSSection[];
   palette?: CSSwatch[];
@@ -102,15 +107,16 @@ export function CaseStudyDetail({ spec }: { spec: CaseStudySpec }) {
           <div className="container">
             <div className="cs-slide reveal" style={{ overflow: "hidden" }}>
               {spec.heroVideo ? (
-                /* Poster prefers the brand logo over heroImage — heroImage is a
-                   portrait card crop that would force the element to its aspect,
-                   and the video's own first frame isn't always representative.
-                   Falls back to the video's first frame (preload="metadata",
-                   no poster) when no logo is available. */
+                /* Poster prefers a pre-composed heroVideoPoster, then the brand
+                   logo, over heroImage — heroImage is a portrait card crop that
+                   would force the element to its aspect, and the video's own
+                   first frame isn't always representative. Falls back to the
+                   video's first frame (preload="metadata", no poster) when
+                   neither is available. */
                 <video
                   className="cs-hero-video"
                   src={spec.heroVideo}
-                  poster={CASE_STUDY_LOGOS[spec.slug]}
+                  poster={spec.heroVideoPoster || CASE_STUDY_LOGOS[spec.slug]}
                   controls
                   playsInline
                   preload="metadata"
