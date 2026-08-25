@@ -1074,6 +1074,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   .hero__ring,
   .contact-badge__ring { animation: none; }
   .cta-marquee__track { animation: none; }
+  .logo-marquee { animation: none; }
 }
 
 /* ── Marquee ── */
@@ -1207,92 +1208,56 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
 /* Bare logo wall — no cards, no borders. Most source logos are plain white
    cutouts meant for a dark background, so every mark is forced to a flat
    ink silhouette (brightness(0) zeroes colour but keeps the alpha shape)
-   so they all read consistently on the cream page background. */
-.logo-row {
-  position: relative;
+   so they all read consistently on the cream page background. Scrolls as a
+   continuous marquee (doubled item list in the markup) rather than cycling
+   fixed rows, so every client is visible as it passes rather than waiting
+   its turn. */
+.logo-marquee-wrap {
   width: 100%;
   max-width: 100%;
-  min-height: 142px;
-  padding: clamp(0.35rem, 1vw, 0.85rem) 0;
   margin-inline: auto;
   overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
-.logo-row__line {
-  position: absolute;
-  inset: clamp(0.35rem, 1vw, 0.85rem) 0;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(132px, 1fr));
-  gap: clamp(1rem, 1.8vw, 1.8rem);
-  align-items: center;
-  justify-items: center;
-  opacity: 0;
-  transform: translateY(8px) scale(0.98);
-  animation: logo-set-cycle 21s infinite;
-}
-.logo-row__line:nth-child(1) { animation-delay: 0s; }
-.logo-row__line:nth-child(2) { animation-delay: 3s; }
-.logo-row__line:nth-child(3) { animation-delay: 6s; }
-.logo-row__line:nth-child(4) { animation-delay: 9s; }
-.logo-row__line:nth-child(5) { animation-delay: 12s; }
-.logo-row__line:nth-child(6) { animation-delay: 15s; }
-.logo-row__line:nth-child(7) { animation-delay: 18s; }
-@keyframes logo-set-cycle {
-  0% { opacity: 0; transform: translateY(8px) scale(0.98); }
-  5% { opacity: 1; transform: translateY(0) scale(1); }
-  18% { opacity: 1; transform: translateY(0) scale(1); }
-  24% { opacity: 0; transform: translateY(-8px) scale(0.98); }
-  100% { opacity: 0; transform: translateY(-8px) scale(0.98); }
-}
-.logo-row__item {
+.logo-marquee {
   display: flex;
+  width: max-content;
+  align-items: center;
+  gap: clamp(2rem, 3.5vw, 3.5rem);
+  animation: logo-marquee-scroll 70s linear infinite;
+  will-change: transform;
+}
+.logo-marquee-wrap:hover .logo-marquee { animation-play-state: paused; }
+@keyframes logo-marquee-scroll {
+  to { transform: translateX(-50%); }
+}
+.logo-marquee__item {
+  display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 118px;
-  min-width: 0;
+  height: 76px;
   opacity: 0.82;
-  transform: translateZ(0);
   transition: opacity 0.25s, transform 0.25s;
 }
-.logo-row__item:hover { opacity: 1; transform: translateY(-2px) scale(1.04); }
-.logo-row__item img {
-  max-width: min(100%, 238px);
-  max-height: 86px;
+.logo-marquee__item:hover { opacity: 1; transform: scale(1.04); }
+.logo-marquee__item img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
   filter: brightness(0) drop-shadow(0 6px 14px rgb(27 27 27 / 0.14));
 }
 /* A handful of logos are already self-contained colour badges (dark badge +
    light text) rather than plain white cutouts — inverting those crushes
    their internal contrast into a solid blob, so they keep their natural
    colours and don't need the dimmed default opacity to read clearly. */
-.logo-row__item--natural { opacity: 0.85; }
-.logo-row__item--natural:hover { opacity: 1; }
-.logo-row__item--natural img { filter: drop-shadow(0 6px 14px rgb(27 27 27 / 0.14)); }
+.logo-marquee__item--natural { opacity: 0.85; }
+.logo-marquee__item--natural:hover { opacity: 1; }
+.logo-marquee__item--natural img { filter: drop-shadow(0 6px 14px rgb(27 27 27 / 0.14)); }
 @media (max-width: 700px) {
-  .logo-row {
-    width: 100%;
-    min-height: 92px;
-  }
-  .logo-row__line {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 0.5rem;
-  }
-  .logo-row__item {
-    width: 100%;
-    height: 64px;
-  }
-  .logo-row__item img {
-    max-width: min(100%, 118px);
-    max-height: 48px;
-  }
-}
-@media (max-width: 420px) {
-  .logo-row__item {
-    height: 54px;
-  }
-  .logo-row__item img {
-    max-width: min(100%, 92px);
-    max-height: 38px;
-  }
+  .logo-marquee { gap: 1.75rem; }
+  .logo-marquee__item { height: 52px; }
 }
 
 /* ── Services ── */
