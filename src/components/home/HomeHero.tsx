@@ -49,11 +49,16 @@ export function HomeHero() {
         <div className="container hero2__content">
           <span className="hero2__eyebrow reveal">We Are</span>
           <h1 className="hero2__wordmark reveal">
-            We Boost{" "}
-            <span className="hero__swap hero2__swap" aria-label="Brands, Sales, Growth">
-              <span className="hero__swap-word">Brands</span>
-              <span className="hero__swap-word" aria-hidden="true">Sales</span>
-              <span className="hero__swap-word" aria-hidden="true">Growth</span>
+            Partner in{" "}
+            <span
+              className="hero__swap hero2__swap"
+              aria-label="Strategy, Creativity, Commerce, Amazon Growth, Performance"
+            >
+              <span className="hero__swap-word">Strategy</span>
+              <span className="hero__swap-word" aria-hidden="true">Creativity</span>
+              <span className="hero__swap-word" aria-hidden="true">Commerce</span>
+              <span className="hero__swap-word" aria-hidden="true">Amazon Growth</span>
+              <span className="hero__swap-word" aria-hidden="true">Performance</span>
             </span>
           </h1>
 

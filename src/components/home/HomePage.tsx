@@ -81,7 +81,7 @@ export function HomePage() {
                 <Image src="/media/case-studies/rehana-table.jpg" alt="Rehana — a DBLSHOT client" width={922} height={1157} />
               </div>
               <div className="bento__tile bento__tile--top">
-                <Image src="/media/case-studies/spritz-kitchen-essentials.jpg" alt="Spritz Kitchen Essentials — a DBLSHOT client" width={2048} height={700} />
+                <Image src="/media/case-studies/spritz-avocado.png" alt="Spritz Avocado Cooking Spray — a DBLSHOT client" width={2048} height={1024} />
               </div>
               <div className="bento__tile bento__tile--bottom">
                 <Image src="/media/case-studies/isis-teas.jpg" alt="ISIS Organic — a DBLSHOT client" width={2400} height={1260} />
@@ -122,7 +122,7 @@ export function HomePage() {
                           alt={clientName(src) || ""}
                           width={220}
                           height={92}
-                          style={{ width: "auto", height: 104, maxWidth: 300, objectFit: "contain" }}
+                          style={{ width: "100%", height: "100%", objectFit: "contain" }}
                         />
                       </span>
                     );
