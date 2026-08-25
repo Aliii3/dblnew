@@ -2008,9 +2008,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   overflow: auto;
   border: 1.5px solid var(--ink);
   border-radius: clamp(1.1rem, 2.5vw, 1.8rem);
-  background:
-    linear-gradient(135deg, rgb(255 249 188 / 0.74), rgb(248 247 230 / 0.86)),
-    var(--cream);
+  background: var(--navy-950);
   box-shadow:
     0.7rem 0.7rem 0 rgb(14 33 84 / 0.18),
     0 34px 100px rgb(14 33 84 / 0.28);
