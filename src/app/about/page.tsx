@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SiteProvider } from "@/components/layout/SiteProvider";
 import { AboutVideo } from "@/components/about/AboutVideo";
-import { PhotoHero } from "@/components/ui/PhotoHero";
+import { LogoHero } from "@/components/ui/LogoHero";
 import { TickerCross } from "@/components/ui/TickerCross";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TeamGrid } from "@/components/ui/TeamGrid";
@@ -19,10 +19,8 @@ export default function AboutPage() {
   return (
     <SiteProvider activeNav="about" innerPage>
       <div className="about-page">
-        <PhotoHero
+        <LogoHero
           id="about-hero"
-          image="/media/stock/offer-lifestyle-placeholder.jpg"
-          objectPosition="50% 15%"
           eyebrow="About Dblshot"
           title={
             <>

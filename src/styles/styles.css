@@ -740,6 +740,26 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   .hero2 .contact-badge.hero2__badge-contact { display: none; }
 }
 
+/* ── Hero 2 — logo variant. A solid brand backdrop with the DBLSHOT lockup
+   as the visual, for pages where a source photo crops awkwardly at hero
+   scale — centered instead of the photo variant's bottom-anchored text. */
+.hero2--logo {
+  justify-content: center;
+  background: radial-gradient(120% 100% at 50% 0%, #2a2013 0%, var(--ink) 62%);
+}
+.hero2__content--logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero2__logo {
+  width: min(360px, 62vw);
+  height: auto;
+  margin-bottom: 2rem;
+}
+.hero2--logo .hero2__wordmark { margin-bottom: 0; }
+
 .btn--lg { padding: 1rem 2rem; font-size: 1rem; }
 .btn--pale,
 .btn--white {
