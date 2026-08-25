@@ -11,6 +11,10 @@ export type CSSection = {
   paragraphs?: string[];
   bullets?: string[];
   stats?: CSStat[];
+  /** Optional campaign/creative banner shown below this section's copy, in
+   *  the same rounded card treatment as the hero image/video. */
+  image?: string;
+  imageAlt?: string;
 };
 export type CSSwatch = { name: string; hex: string };
 export type CSRelated = { label: string; href: string };
@@ -83,12 +87,15 @@ export function CaseStudyDetail({ spec }: { spec: CaseStudySpec }) {
           <div className="container">
             <div className="cs-slide reveal" style={{ overflow: "hidden" }}>
               {spec.heroVideo ? (
-                /* No poster: heroImage is a portrait card crop and would force
-                   the element to its aspect. preload="metadata" renders the
-                   first frame without pulling the whole file. */
+                /* Poster prefers the brand logo over heroImage — heroImage is a
+                   portrait card crop that would force the element to its aspect,
+                   and the video's own first frame isn't always representative.
+                   Falls back to the video's first frame (preload="metadata",
+                   no poster) when no logo is available. */
                 <video
                   className="cs-hero-video"
                   src={spec.heroVideo}
+                  poster={CASE_STUDY_LOGOS[spec.slug]}
                   controls
                   playsInline
                   preload="metadata"
@@ -135,6 +142,17 @@ export function CaseStudyDetail({ spec }: { spec: CaseStudySpec }) {
                     <li key={b}>{b}</li>
                   ))}
                 </ul>
+              ) : null}
+              {sec.image ? (
+                <div className="cs-slide cs-block__image reveal" style={{ overflow: "hidden" }}>
+                  <Image
+                    src={sec.image}
+                    alt={sec.imageAlt || ""}
+                    width={2048}
+                    height={1024}
+                    style={{ width: "100%", height: "auto", display: "block" }}
+                  />
+                </div>
               ) : null}
               {sec.stats ? <StatRow stats={sec.stats} /> : null}
             </div>

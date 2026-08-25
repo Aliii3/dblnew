@@ -73,6 +73,8 @@ const spec: CaseStudySpec = {
       paragraphs: [
         "Dblshot managed Spritz's social presence end-to-end across Instagram and Facebook — a content strategy and always-on publishing calendar, day-to-day community management, and layered paid social — turning presence into a consistent revenue channel.",
       ],
+      image: "/media/case-studies/spritz-into-summer.jpg",
+      imageAlt: "Spritz Into Summer — the full cooking-spray lineup styled in a beach picnic basket, part of Spritz's seasonal social content strategy",
       stats: [
         { value: "202%", label: "Social-driven sales growth YoY" },
         { value: "167%", label: "Order growth YoY" },
