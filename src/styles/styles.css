@@ -1217,6 +1217,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   max-width: 100%;
   margin-inline: auto;
   overflow: hidden;
+  contain: paint;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
@@ -1227,6 +1228,8 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   gap: clamp(2rem, 3.5vw, 3.5rem);
   animation: logo-marquee-scroll 70s linear infinite;
   will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 .logo-marquee-wrap:hover .logo-marquee { animation-play-state: paused; }
 @keyframes logo-marquee-scroll {
@@ -1239,14 +1242,18 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
   justify-content: center;
   height: 76px;
   opacity: 0.82;
-  transition: opacity 0.25s, transform 0.25s;
+  transition: opacity 0.25s;
 }
-.logo-marquee__item:hover { opacity: 1; transform: scale(1.04); }
+.logo-marquee__item:hover { opacity: 1; }
+/* Flat brightness(0) only — no drop-shadow. A blurred filter on ~60 nodes
+   riding a continuous transform is expensive to keep rasterized every
+   frame and was the main source of scroll jank; a flat silhouette costs
+   the compositor nothing extra. */
 .logo-marquee__item img {
   height: 100%;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) drop-shadow(0 6px 14px rgb(27 27 27 / 0.14));
+  filter: brightness(0);
 }
 /* A handful of logos are already self-contained colour badges (dark badge +
    light text) rather than plain white cutouts — inverting those crushes
@@ -1254,7 +1261,7 @@ body:has(.hero2) .nav:not(.is-scrolled) .nav__toggle span { background: #fdf9ec;
    colours and don't need the dimmed default opacity to read clearly. */
 .logo-marquee__item--natural { opacity: 0.85; }
 .logo-marquee__item--natural:hover { opacity: 1; }
-.logo-marquee__item--natural img { filter: drop-shadow(0 6px 14px rgb(27 27 27 / 0.14)); }
+.logo-marquee__item--natural img { filter: none; }
 @media (max-width: 700px) {
   .logo-marquee { gap: 1.75rem; }
   .logo-marquee__item { height: 52px; }
