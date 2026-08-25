@@ -47,11 +47,8 @@ const NATURAL_COLOR_LOGOS = [
   "zeina", // Zeina
 ];
 
-const LOGO_ROW_SIZE = 5;
-const CLIENT_LOGO_ROWS = Array.from(
-  { length: Math.ceil(CLIENT_LOGOS.length / LOGO_ROW_SIZE) },
-  (_, row) => CLIENT_LOGOS.slice(row * LOGO_ROW_SIZE, row * LOGO_ROW_SIZE + LOGO_ROW_SIZE)
-);
+/** Doubled so the scrolling track loops seamlessly once the first copy scrolls out. */
+const LOGO_MARQUEE_ITEMS = [...CLIENT_LOGOS, ...CLIENT_LOGOS];
 
 export function HomePage() {
   const workStudies = getAllCaseStudies().filter((s) => !HOME_WORK_HIDDEN_SLUGS.has(s.slug));
@@ -119,25 +116,26 @@ export function HomePage() {
                 <span className="proven-stat__label">{stat.label}</span>
               </article>
             ))}
-            <div className="logo-row reveal" aria-label="Selected DBLSHOT clients">
-              {CLIENT_LOGO_ROWS.map((row, rowIndex) => (
-                <div className="logo-row__line" key={`client-row-${rowIndex}`}>
-                  {row.map((src) => {
-                    const natural = NATURAL_COLOR_LOGOS.some((id) => src.includes(id));
-                    return (
-                      <span className={`logo-row__item${natural ? " logo-row__item--natural" : ""}`} key={src}>
-                        <Image
-                          src={src}
-                          alt={clientName(src) || ""}
-                          width={220}
-                          height={92}
-                          style={{ width: "100%", height: "100%", objectFit: "contain" }}
-                        />
-                      </span>
-                    );
-                  })}
-                </div>
-              ))}
+            <div className="logo-marquee-wrap reveal" aria-label="Selected DBLSHOT clients">
+              <div className="logo-marquee">
+                {LOGO_MARQUEE_ITEMS.map((src, i) => {
+                  const natural = NATURAL_COLOR_LOGOS.some((id) => src.includes(id));
+                  return (
+                    <span
+                      className={`logo-marquee__item${natural ? " logo-marquee__item--natural" : ""}`}
+                      key={`${src}-${i}`}
+                    >
+                      <Image
+                        src={src}
+                        alt={i < CLIENT_LOGOS.length ? clientName(src) || "" : ""}
+                        width={220}
+                        height={92}
+                        style={{ width: "auto", height: 76, maxWidth: 238, objectFit: "contain" }}
+                      />
+                    </span>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
