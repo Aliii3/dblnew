@@ -39,6 +39,7 @@ const PROJECT_LOGOS: Record<string, string> = {
   "SEKEM Premium": "/media/clients/IEzNPAmU7hScrRAWBnLGcUCw7g.png",
   "iSiS × SEKEM": "/media/clients/WQakjqWJVTi6703foxvfgAj0Oc.png",
   "Halwa & Tahini": "/media/clients/E46KWmdgoYtOJu56riHrVue3xo.png",
+  "Mozambique Launch": "/media/clients/cimento-forca.png",
   "Turkish Coffee Brand": "/media/clients/OxNEFwVLqzVekRKf0ZzULVeVRM.png",
 };
 
