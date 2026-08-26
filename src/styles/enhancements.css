@@ -1325,10 +1325,12 @@ body {
 .hero2__wordmark .hero__swap,
 .hero__title .gold,
 .agency-intro__heading em.gold {
+  /* No emboss: a hard white shadow over a hard dark one at 0.05em (3px at the
+     60px section size) printed a visible grey ghost of the word down and to the
+     side of the italic, which read as a misregistered double image on cream.
+     Gold on cream carries itself. The dark hero keeps its own shadow below,
+     where the wordmark sits over a photo and needs the separation. */
   color: var(--gold);
-  text-shadow:
-    0 1px 0 rgb(255 255 255 / 0.34),
-    0 0.05em 0 rgb(26 21 16 / 0.06);
 }
 .section-heading .text-gold,
 .page-hero__title .text-gold {
@@ -1409,7 +1411,6 @@ body:has(.hero2) .hero2__wordmark .hero__swap {
   -webkit-background-clip: text;
   background-clip: text;
   color: var(--gold);
-  filter: drop-shadow(0 1px 0 rgb(255 255 255 / 0.28));
 }
 .page-hero__title .text-gold,
 .contact-intro h2 .text-gold,
