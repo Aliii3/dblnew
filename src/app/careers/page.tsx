@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { SiteProvider } from "@/components/layout/SiteProvider";
 import { PhotoHero } from "@/components/ui/PhotoHero";
-import { TickerCross } from "@/components/ui/TickerCross";
 import { PageCTA } from "@/components/ui/PageCTA";
+import { JobIcon } from "@/components/ui/JobIcon";
 import { JOBS } from "@/lib/content/jobs";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -34,9 +34,6 @@ export default function CareersPage() {
         }
         actions={[{ label: "See Open Roles", href: "#roles" }]}
       />
-      <TickerCross
-        items={["We're Hiring", "New Cairo", "Strategists", "Creators", "Operators", "Join The Team"]}
-      />
 
       <section className="section" id="roles">
         <div className="container">
@@ -46,6 +43,9 @@ export default function CareersPage() {
           <div className="offer-cards__list career-cards" style={{ maxWidth: 900 }}>
             {JOBS.map((job) => (
               <Link className="offer-card career-card" href={`/careers/${job.slug}`} key={job.slug}>
+                <span className="offer-card__icon" aria-hidden="true">
+                  <JobIcon name={job.icon} />
+                </span>
                 <span className="offer-card__body">
                   <span className="offer-card__title">{job.title}</span>
                   <span className="offer-card__desc">{job.description}</span>

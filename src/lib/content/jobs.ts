@@ -7,7 +7,8 @@ export const JOBS =   [
         "5+ years"
       ],
       "mailSubject": "Senior Graphic Designer",
-      "slug": "seniorgraphic-designer"
+      "slug": "seniorgraphic-designer",
+      "icon": "design"
     },
     {
       "title": "Social Media Moderator",
@@ -16,7 +17,8 @@ export const JOBS =   [
         "New Cairo"
       ],
       "mailSubject": "Social Media Moderator",
-      "slug": "social-media-specialist"
+      "slug": "social-media-specialist",
+      "icon": "social"
     },
     {
       "title": "Reel Creator",
@@ -26,7 +28,8 @@ export const JOBS =   [
         "Experience: 2-3 years"
       ],
       "mailSubject": "Reel Creator",
-      "slug": "reel-creator"
+      "slug": "reel-creator",
+      "icon": "video"
     },
     {
       "title": "Performance Marketing Specialist",
@@ -36,7 +39,8 @@ export const JOBS =   [
         "Experience: 1–2 years"
       ],
       "mailSubject": "Performance Marketing Specialist",
-      "slug": "performance-marketing-specialist"
+      "slug": "performance-marketing-specialist",
+      "icon": "marketing"
     },
     {
       "title": "Video Editor",
@@ -45,7 +49,8 @@ export const JOBS =   [
         "New Cairo"
       ],
       "mailSubject": "Video Editor",
-      "slug": "video-editor"
+      "slug": "video-editor",
+      "icon": "video"
     },
     {
       "title": "Graphic Designer",
@@ -55,7 +60,8 @@ export const JOBS =   [
         "3–5 years"
       ],
       "mailSubject": "Graphic Designer",
-      "slug": "graphic-designer"
+      "slug": "graphic-designer",
+      "icon": "design"
     },
     {
       "title": "Software Developer",
@@ -65,7 +71,8 @@ export const JOBS =   [
         "1–2 years"
       ],
       "mailSubject": "Software Developer",
-      "slug": "software-developer"
+      "slug": "software-developer",
+      "icon": "code"
     },
     {
       "title": "Accountant (Tax Experience)",
@@ -75,7 +82,8 @@ export const JOBS =   [
         "Part-Time"
       ],
       "mailSubject": "Accountant (Tax Experience)",
-      "slug": "accountant-tax-experience"
+      "slug": "accountant-tax-experience",
+      "icon": "finance"
     },
     {
       "title": "Product Photographer",
@@ -84,6 +92,7 @@ export const JOBS =   [
         "New Cairo"
       ],
       "mailSubject": "Product Photographer",
-      "slug": "product-photographer"
+      "slug": "product-photographer",
+      "icon": "camera"
     }
   ] as const;
