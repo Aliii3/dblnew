@@ -117,12 +117,12 @@ export default function JuniorMarketerPage() {
       <section className="section">
         <div className="container">
           <div className="cs-feature reveal-stagger">
-            <div className="cs-feature__media">
+            <div className="cs-feature__media" style={{ aspectRatio: "1082 / 1454" }}>
               <Image
-                src="/media/team/radwa.png"
+                src="/media/team/editorial/radwa.webp"
                 alt="Radwa Fathi"
-                width={900}
-                height={600}
+                width={1082}
+                height={1454}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>
