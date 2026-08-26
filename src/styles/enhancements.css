@@ -1314,7 +1314,7 @@ body {
 .section-heading {
   font-family: var(--font-display);
   font-weight: 900;
-  line-height: 0.92;
+  line-height: 1.05;
   letter-spacing: -0.045em;
   color: var(--ink);
   text-wrap: balance;
@@ -1697,7 +1697,7 @@ body:has(.hero2) .hero2__wordmark .hero__swap {
   font-size: clamp(2.1rem, 5vw, 4.6rem);
   font-weight: 900;
   letter-spacing: -0.045em;
-  line-height: 0.95;
+  line-height: 1.05;
 }
 .about-page__journey-intro {
   max-width: 42rem;

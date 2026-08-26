@@ -57,11 +57,15 @@ body {
   color: var(--ink);
 }
 
+/* line-height stays at 1.05 (matching .type-title) rather than dipping below 1:
+   in the display serif the glyph ink measures ~0.99em tall, so any value under
+   1 leaves the line box shorter than the letters and descenders get sliced
+   wherever a heading sits in a clipping container. */
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 0.94;
+  line-height: 1.05;
   margin: 0;
 }
 h1 { font-weight: 900; letter-spacing: -0.045em; }
@@ -572,7 +576,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   font-weight: 600;
   font-size: clamp(3rem, 11vw, 8.5rem);
   letter-spacing: -0.02em;
-  line-height: 0.92;
+  line-height: 1.05;
   margin-bottom: 1.5rem;
 }
 .hero__title .outline {
@@ -628,7 +632,11 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .hero__swap {
   position: relative;
   display: inline-block;
-  min-width: 14ch;
+  /* Reserves room for the longest word so the rotation doesn't reflow the line.
+     Capped at 100%: at the wordmark's mobile floor a flat 14ch measures wider
+     than the viewport, pushing 43px of phantom scroll width behind the body's
+     overflow-x clip. The words themselves fit well inside. */
+  min-width: min(14ch, 100%);
   vertical-align: top;
 }
 .hero__swap-word {
@@ -708,7 +716,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(3rem, 10vw, 7.5rem);
-  line-height: 0.96;
+  line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--gold);
   margin: 0 0 2.75rem;
@@ -1354,7 +1362,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(2.5rem, 6vw, 4rem);
-  line-height: 0.96;
+  line-height: 1.05;
   letter-spacing: -0.01em;
 }
 .offer-panel__heading span {
