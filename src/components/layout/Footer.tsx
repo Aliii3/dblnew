@@ -40,10 +40,10 @@ export function Footer() {
         <div className="footer__brand">
           <Link className="footer__logo" href="/">
             <Image
-              src="/brand/logo-lockup-navy.png"
+              src="/brand/logo-stacked-navy.png"
               alt="DBLSHOT — Performance Marketing and Consulting Agency"
-              width={614}
-              height={174}
+              width={862}
+              height={760}
             />
           </Link>
           <p className="footer__quote">{BRAND_QUOTE}</p>

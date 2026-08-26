@@ -2542,7 +2542,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   gap: 1.25rem;
 }
 .footer__logo { display: inline-flex; width: fit-content; }
-.footer__logo img { width: 148px; height: auto; display: block; }
+/* The footer carries the stacked lockup (mark over wordmark), so it needs more
+   width than the horizontal one to keep the tagline from turning to mush. */
+.footer__logo img { width: 168px; height: auto; display: block; }
 .footer__quote {
   margin: 0;
   max-width: 34ch;
