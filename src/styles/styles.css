@@ -224,21 +224,19 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   background: var(--gold);
 }
 
-/* Reveal animations: visible by default so content never disappears if JS misses. */
-.reveal { opacity: 1; transform: none; }
-.reveal-line { overflow: hidden; display: block; }
-.reveal-line > span { display: block; transform: translateY(110%); }
+/* Text is static: every .reveal* hook renders fully visible and untransformed.
+   The classes are kept as no-op markers so existing markup needs no rewrite —
+   nothing clips, offsets, or fades text in, on first paint or on scroll. */
+.reveal,
+.reveal-stagger > * { opacity: 1; transform: none; }
+.reveal-line { display: block; overflow: visible; }
+.reveal-line > span { display: block; transform: none; }
 
-/* Catchers-style masked line reveal — content slides up from behind a clip mask */
-.reveal-mask { overflow: clip; margin-block: -0.12em; }
+.reveal-mask { overflow: visible; margin-block: -0.12em; }
 .reveal-mask__inner {
   display: block;
   padding-block: 0.12em;
   transform: none;
-  will-change: transform;
-}
-@media (prefers-reduced-motion: reduce) {
-  .reveal-mask__inner { transform: none; }
 }
 
 /* ── Nav ── */

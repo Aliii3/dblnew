@@ -201,58 +201,13 @@ export function useSiteEffects(options?: { home?: boolean }) {
     /* GSAP */
     let lenis: Lenis | null = null;
     let gsapTicker: ((time: number) => void) | null = null;
-    let heroTl: gsap.core.Timeline | null = null;
 
     if (!prefersReduced) {
       gsap.registerPlugin(ScrollTrigger);
 
-      gsap.utils.toArray<HTMLElement>(".reveal").forEach((el) => {
-        gsap.fromTo(
-          el,
-          { opacity: 0, y: 40 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power3.out",
-            immediateRender: false,
-            scrollTrigger: { trigger: el, start: "top 88%", toggleActions: "play none none none" },
-          }
-        );
-      });
-
-      gsap.utils.toArray<HTMLElement>(".reveal-stagger").forEach((container) => {
-        gsap.fromTo(
-          container.children,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            stagger: 0.12,
-            ease: "power3.out",
-            immediateRender: false,
-            scrollTrigger: { trigger: container, start: "top 85%" },
-          }
-        );
-      });
-
-      /* Masked line reveal (Catchers-style) — inner slides up from behind the clip */
-      gsap.utils.toArray<HTMLElement>(".reveal-mask").forEach((el) => {
-        const inner = el.querySelector<HTMLElement>(".reveal-mask__inner");
-        if (!inner) return;
-        gsap.fromTo(
-          inner,
-          { y: "115%" },
-          {
-            y: 0,
-            duration: 1.1,
-            ease: "power4.out",
-            immediateRender: false,
-            scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none none" },
-          }
-        );
-      });
+      /* Text entrance animations (.reveal, .reveal-stagger, .reveal-mask, and the
+         hero line masks) are deliberately absent: copy is rendered static and
+         fully visible by CSS instead. Only non-text motion lives here. */
 
       /* Scroll parallax (Catchers-style drift) */
       gsap.utils.toArray<HTMLElement>(".parallax").forEach((el) => {
@@ -262,11 +217,6 @@ export function useSiteEffects(options?: { home?: boolean }) {
           ease: "none",
           scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: 0.6 },
         });
-      });
-
-      /* Page hero */
-      gsap.utils.toArray<HTMLElement>(".page-hero .reveal-line > span").forEach((line, i) => {
-        gsap.to(line, { y: 0, duration: 1, delay: i * 0.06, ease: "power4.out" });
       });
 
       lenis = new Lenis({ duration: 1.2, smoothWheel: true });
@@ -301,19 +251,8 @@ export function useSiteEffects(options?: { home?: boolean }) {
       }
 
       if (options?.home) {
-        const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
-        heroTl = tl;
-        gsap.utils.toArray<HTMLElement>(".hero .reveal-line > span").forEach((line, i) => {
-          tl.to(line, { y: 0, duration: 1.1, ease: "power4.out" }, i * 0.08);
-        });
-        // fromTo (not from): explicit values survive StrictMode's double-mount,
-        // where .from would re-record the mid-animation state and freeze at opacity 0.
-        tl.fromTo(
-          [".hero__badge", ".hero__sub", ".hero__actions", ".hero__scroll"],
-          { opacity: 0, y: 30 },
-          { opacity: 1, y: 0, duration: 0.9, stagger: 0.15, immediateRender: true },
-          0.5
-        );
+        /* The hero headline, badge, subtitle and actions render static — no
+           staggered entrance timeline. Only the portrait still moves. */
 
         /* Portrait parallax — drifts down slower than the page scroll (Catchers-style).
            Desktop only: the tween's inline transform would override the mobile CSS reset. */
@@ -326,11 +265,6 @@ export function useSiteEffects(options?: { home?: boolean }) {
         }
 
       }
-    } else {
-      document.querySelectorAll<HTMLElement>(".reveal, .reveal-line > span").forEach((el) => {
-        el.style.opacity = "1";
-        el.style.transform = "none";
-      });
     }
 
     return () => {
@@ -353,7 +287,6 @@ export function useSiteEffects(options?: { home?: boolean }) {
         card.removeEventListener("mouseleave", leave);
       });
       if (gsapTicker) gsap.ticker.remove(gsapTicker);
-      heroTl?.kill();
       lenis?.destroy();
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };

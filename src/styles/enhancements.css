@@ -68,6 +68,26 @@
 .content-shell--wide {
   max-width: 960px;
 }
+
+/* Inner-page body sections share the page hero's left edge instead of sitting in
+   their own centred track — otherwise a page reads with two competing left
+   margins (hero flush to the container, copy indented by half the leftover
+   width). The shell spans the container grid; each block keeps its own readable
+   measure. Only applies where the shell IS the container, so shells nested in a
+   split column stay centred in that column. */
+.container.content-shell {
+  max-width: none;
+  width: min(1280px, calc(100% - 3rem));
+}
+.container.content-shell > * {
+  max-width: 800px;
+}
+.container.content-shell.content-shell--wide > * {
+  max-width: 960px;
+}
+.container.content-shell.content-shell--xwide > * {
+  max-width: none;
+}
 /* For two-column media rows, where each column still needs a readable measure.
    Matches .container's cap so the media column has room for full-size artwork. */
 .content-shell--xwide {
