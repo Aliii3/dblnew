@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SiteProvider } from "@/components/layout/SiteProvider";
-import { PhotoHero } from "@/components/ui/PhotoHero";
+import { PageHero } from "@/components/ui/PageHero";
 import { PageCTA } from "@/components/ui/PageCTA";
 import { JobIcon } from "@/components/ui/JobIcon";
 import { JOBS } from "@/lib/content/jobs";
@@ -21,18 +21,15 @@ function formatMeta(tag: string): string {
 export default function CareersPage() {
   return (
     <SiteProvider activeNav="careers" innerPage>
-      <PhotoHero
-        id="careers-hero"
-        image="/media/team/lolo.png"
-        objectPosition="50% 28%"
-        zoom={1.6}
-        eyebrow="Careers"
+      <PageHero
+        label="Careers"
         title={
           <>
-            Join the <span className="hero2__swap">Impact</span>
+            Join the <span className="text-gold">Impact</span>
           </>
         }
-        actions={[{ label: "See Open Roles", href: "#roles" }]}
+        ctaLabel="See Open Roles"
+        ctaHref="#roles"
       />
 
       <section className="section" id="roles">
