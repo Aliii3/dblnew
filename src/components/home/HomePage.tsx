@@ -7,14 +7,9 @@ import { HomeBlogCard } from "@/components/home/HomeBlogCard";
 import { HomeHero } from "@/components/home/HomeHero";
 import { CtaMarquee } from "@/components/ui/CtaMarquee";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
-import { ProcessIcon } from "@/components/ui/ProcessIcon";
+import { ImpactRoadmap } from "@/components/ui/ImpactRoadmap";
 import { TeamGrid } from "@/components/ui/TeamGrid";
-import {
-  PROVEN_STATS,
-  DEEP_IMPACT_STATS,
-  SERVICES,
-  PROCESS_STEPS,
-} from "@/lib/content";
+import { PROVEN_STATS, DEEP_IMPACT_STATS, SERVICES } from "@/lib/content";
 import { HOME_BLOG_POSTS, HOME_TEAM, HOME, CLIENT_LOGOS } from "@/lib/content/home";
 import { clientName } from "@/lib/content/clients";
 import { getAllCaseStudies } from "@/lib/content/case-studies";
@@ -223,20 +218,7 @@ export function HomePage() {
           <SectionHeading center>
             Impact <span className="text-gold">Process</span>
           </SectionHeading>
-          <ol className="process-timeline reveal-stagger">
-            {PROCESS_STEPS.map((step) => (
-              <li className="process-step" key={step.num}>
-                <span className="process-step__marker">
-                  <ProcessIcon name={step.icon} />
-                  <span className="process-step__num">{step.num}</span>
-                </span>
-                <div className="process-step__content">
-                  <h3 className="process-step__title">{step.title}</h3>
-                  <p className="process-step__desc">{step.description}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+          <ImpactRoadmap />
         </div>
       </section>
 

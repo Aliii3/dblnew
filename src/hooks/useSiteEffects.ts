@@ -250,6 +250,30 @@ export function useSiteEffects(options?: { home?: boolean }) {
         });
       }
 
+      /* Impact roadmap — the gold trail draws along the road as the section
+         scrolls, lighting each stop's ring as it is passed. Same scrubbed
+         rail pattern as the about-page timeline above. CSS leaves the trail
+         complete for the no-JS case, so this winds it back to zero first. */
+      const roadmap = document.querySelector<HTMLElement>(".roadmap");
+      if (roadmap) {
+        const stops = Array.from(roadmap.querySelectorAll<HTMLElement>(".roadmap__stop"));
+        const setTrail = (p: number) => {
+          roadmap.style.setProperty("--progress", `${p * 100}%`);
+          stops.forEach((stop) => {
+            stop.classList.toggle("is-reached", p >= parseFloat(stop.dataset.at || "0"));
+          });
+        };
+        setTrail(0);
+        ScrollTrigger.create({
+          trigger: roadmap,
+          start: "top 72%",
+          end: "bottom 78%",
+          scrub: 0.4,
+          onUpdate: (self) => setTrail(self.progress),
+          onRefresh: (self) => setTrail(self.progress),
+        });
+      }
+
       if (options?.home) {
         /* The hero headline, badge, subtitle and actions render static — no
            staggered entrance timeline. Only the portrait still moves. */
