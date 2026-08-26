@@ -29,7 +29,7 @@ const CARD_META: Record<string, Pick<CaseStudyCard, "image" | "metrics">> = {
     metrics: [{ value: "360°", label: "Campaign scaling" }],
   },
   rehana: {
-    image: "/media/case-studies/rehana-table.jpg",
+    image: "/media/case-studies/rehana-packaging.webp",
     metrics: [{ value: "350%", label: "Ramadan growth" }],
   },
   ltf: {

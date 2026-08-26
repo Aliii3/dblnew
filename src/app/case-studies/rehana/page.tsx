@@ -6,7 +6,7 @@ export const metadata = createPageMetadata({
   description:
     "One month. One chance. How Rehana won Ramadan on Amazon — a full store build and full-funnel ads campaign executed in just 30 days, driving 350% growth on Ramadan SKUs.",
   path: "/case-studies/rehana",
-  image: "/media/case-studies/rehana-table.jpg",
+  image: "/media/case-studies/rehana-packaging.webp",
 });
 
 const spec: CaseStudySpec = {
@@ -24,7 +24,7 @@ const spec: CaseStudySpec = {
     { label: "Market", value: "Egypt" },
     { label: "Scope", value: "Amazon Store Build + Full-Funnel Ads (30 Days)" },
   ],
-  heroImage: "/media/case-studies/rehana-table.jpg",
+  heroImage: "/media/case-studies/rehana-packaging.webp",
   heroStats: [
     { value: "350%", label: "Growth on Ramadan SKUs" },
     { value: "40%", label: "Total Amazon sales uplift MoM" },
