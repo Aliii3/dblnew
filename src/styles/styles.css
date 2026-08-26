@@ -1719,17 +1719,21 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   display: flex;
   align-items: center;
   gap: clamp(0.85rem, 1.5vw, 1.35rem);
-  width: min(34ch, 44%);
+  width: min(34ch, 37%);
 }
+/* Labels read outward, away from the road. A stop in the left lane anchors its
+   right edge to the marker and runs its text off to the left; one in the right
+   lane does the mirror. Text therefore never enters the band the carriageway
+   weaves through. */
 .roadmap__stop--left {
-  left: var(--x);
-  transform: translate(calc(var(--marker) / -2), -50%);
-}
-.roadmap__stop--right {
   right: calc(100% - var(--x));
   transform: translate(calc(var(--marker) / 2), -50%);
   flex-direction: row-reverse;
   text-align: right;
+}
+.roadmap__stop--right {
+  left: var(--x);
+  transform: translate(calc(var(--marker) / -2), -50%);
 }
 .roadmap__marker {
   position: relative;

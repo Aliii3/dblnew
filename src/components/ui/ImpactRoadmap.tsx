@@ -2,9 +2,12 @@ import type { CSSProperties } from "react";
 import { ProcessIcon } from "@/components/ui/ProcessIcon";
 import { PROCESS_STEPS } from "@/lib/content/process";
 
-/** viewBox units per stop, and the two lane centres the road weaves between. */
+/** viewBox units per stop, and the two lane centres the road weaves between.
+ *  The lanes sit inboard of centre so the road only ever occupies the middle
+ *  band — every label then fans outward into clear space instead of being cut
+ *  by the carriageway sweeping past. */
 const ROW = 100;
-const LANES = [26, 74];
+const LANES = [38, 62];
 
 /**
  * One stop per row, alternating lanes, joined by cubics with vertical tangents
