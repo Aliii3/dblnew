@@ -28,7 +28,7 @@ export type NavKey =
   | "blogs"
   | "junior"
   | "careers"
-  | "testimonials";
+  | "testimonial";
 
 export type NavChild = { label: string; href: string };
 
@@ -56,7 +56,9 @@ export const NAV_ITEMS: NavItem[] = [
   },
   { key: "impact", label: "Deep Impact", href: "/deep-impact" },
   { key: "about", label: "About Us", href: "/about" },
-  { key: "testimonials", label: "Testimonials", href: "/testimonial" },
+  // Hidden from the nav until there are approved testimonials to show —
+  // the wall section renders nothing while the list is empty. Uncomment to relink.
+  // { key: "testimonial", label: "Testimonial", href: "/testimonial" },
   { key: "junior", label: "Junior Marketer", href: "/junior-marketer" },
   { key: "careers", label: "Careers", href: "/careers" },
 ];
