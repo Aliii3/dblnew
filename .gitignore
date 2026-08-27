@@ -13,3 +13,6 @@ next-env.d.ts
 
 # Personal Claude Code settings (machine-specific)
 .claude/settings.local.json
+
+# Local testimonial submissions (file-store fallback)
+data/

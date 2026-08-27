@@ -20,7 +20,15 @@ export const LOGO_URL_CDN =
   "https://framerusercontent.com/images/BBeCdJdGDocOQg4RKp3Bx3sU.png";
 
 /** "blogs" is no longer in the nav, but /blogs still exists and sets it. */
-export type NavKey = "home" | "services" | "impact" | "about" | "blogs" | "junior" | "careers";
+export type NavKey =
+  | "home"
+  | "services"
+  | "impact"
+  | "about"
+  | "blogs"
+  | "junior"
+  | "careers"
+  | "testimonials";
 
 export type NavChild = { label: string; href: string };
 
@@ -48,6 +56,7 @@ export const NAV_ITEMS: NavItem[] = [
   },
   { key: "impact", label: "Deep Impact", href: "/deep-impact" },
   { key: "about", label: "About Us", href: "/about" },
+  { key: "testimonials", label: "Testimonials", href: "/testimonials" },
   { key: "junior", label: "Junior Marketer", href: "/junior-marketer" },
   { key: "careers", label: "Careers", href: "/careers" },
 ];

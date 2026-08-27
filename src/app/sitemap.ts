@@ -23,6 +23,7 @@ const STATIC_ROUTES = [
   "/deep-impact",
   "/junior-marketer",
   "/privacy-policy",
+  "/testimonials",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
