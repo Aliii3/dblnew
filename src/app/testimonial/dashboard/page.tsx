@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Testimonials Dashboard",
   description: "Review and publish client testimonials.",
-  path: "/testimonials/dashboard",
+  path: "/testimonial/dashboard",
   noIndex: true,
 });
 

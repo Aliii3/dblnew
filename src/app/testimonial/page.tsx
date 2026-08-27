@@ -9,7 +9,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Client Testimonials",
   description: "Read what brands say about working with DBLSHOT — and share your own experience.",
-  path: "/testimonials",
+  path: "/testimonial",
 });
 
 // The wall changes whenever the team moderates, so it's never cached.

@@ -31,7 +31,7 @@ export function TestimonialForm() {
     };
 
     try {
-      const res = await fetch("/api/testimonials", {
+      const res = await fetch("/api/testimonial", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

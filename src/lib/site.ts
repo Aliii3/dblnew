@@ -56,7 +56,7 @@ export const NAV_ITEMS: NavItem[] = [
   },
   { key: "impact", label: "Deep Impact", href: "/deep-impact" },
   { key: "about", label: "About Us", href: "/about" },
-  { key: "testimonials", label: "Testimonials", href: "/testimonials" },
+  { key: "testimonials", label: "Testimonials", href: "/testimonial" },
   { key: "junior", label: "Junior Marketer", href: "/junior-marketer" },
   { key: "careers", label: "Careers", href: "/careers" },
 ];

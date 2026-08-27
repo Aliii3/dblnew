@@ -54,7 +54,7 @@ export function TestimonialsDashboard() {
   const [busyId, setBusyId] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    const res = await fetch("/api/testimonials/admin", { cache: "no-store" });
+    const res = await fetch("/api/testimonial/admin", { cache: "no-store" });
 
     if (res.status === 401) {
       setAuthed(false);
@@ -84,7 +84,7 @@ export function TestimonialsDashboard() {
     setAuthError("");
 
     try {
-      const res = await fetch("/api/testimonials/admin", {
+      const res = await fetch("/api/testimonial/admin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
@@ -107,7 +107,7 @@ export function TestimonialsDashboard() {
   }
 
   async function handleSignOut() {
-    await fetch("/api/testimonials/admin", { method: "DELETE" });
+    await fetch("/api/testimonial/admin", { method: "DELETE" });
     setTestimonials([]);
     setAuthed(false);
   }
@@ -117,7 +117,7 @@ export function TestimonialsDashboard() {
     setError("");
 
     try {
-      const res = await fetch(`/api/testimonials/admin/${id}`, {
+      const res = await fetch(`/api/testimonial/admin/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status }),
@@ -144,7 +144,7 @@ export function TestimonialsDashboard() {
     setError("");
 
     try {
-      const res = await fetch(`/api/testimonials/admin/${id}`, { method: "DELETE" });
+      const res = await fetch(`/api/testimonial/admin/${id}`, { method: "DELETE" });
 
       if (!res.ok) {
         const data = (await res.json()) as { error?: string };
@@ -237,7 +237,7 @@ export function TestimonialsDashboard() {
           </h1>
           <p className="dash__subtitle">
             Approve a submission to publish it on{" "}
-            <Link href="/testimonials" className="text-gold text-gold--link">
+            <Link href="/testimonial" className="text-gold text-gold--link">
               the testimonials page
             </Link>
             .
