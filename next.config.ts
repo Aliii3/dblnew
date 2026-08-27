@@ -93,6 +93,19 @@ const nextConfig: NextConfig = {
         destination: "/services/market-research",
         permanent: true,
       },
+      // Common misspelling ("testmonial") and the earlier plural path.
+      { source: "/testmonial", destination: "/testimonial", permanent: true },
+      {
+        source: "/testmonial/dashboard",
+        destination: "/testimonial/dashboard",
+        permanent: true,
+      },
+      { source: "/testimonials", destination: "/testimonial", permanent: true },
+      {
+        source: "/testimonials/dashboard",
+        destination: "/testimonial/dashboard",
+        permanent: true,
+      },
     ];
   },
 };
