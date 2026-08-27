@@ -1312,7 +1312,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   letter-spacing: -0.02em;
   line-height: 0.9;
   font-size: clamp(3rem, 8vw, 5.5rem);
-  color: var(--ink);
+  color: var(--brand-blue);
   font-variant-numeric: tabular-nums;
 }
 .impact-stat__label {

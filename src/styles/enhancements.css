@@ -1527,13 +1527,19 @@ body:has(.hero2) .hero2__wordmark .hero__swap {
   padding: clamp(1.4rem, 3vw, 2rem);
   text-align: left;
 }
-.impact-stat__num,
 .metric-pill strong,
 .cs-stat strong,
 .cs-feature__stat strong {
   font-family: var(--font-display);
   font-weight: 700;
   color: var(--ink);
+  letter-spacing: 0;
+}
+/* Headline stat figures read as brand blue, matching the "Deep" lockup. */
+.impact-stat__num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--brand-blue);
   letter-spacing: 0;
 }
 .impact-stat__label,
