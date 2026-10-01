@@ -11,6 +11,13 @@ export type BlogPostMeta = {
 /** Exact titles/copy from dblshot.co Knowledge Drop */
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "back-to-school-campaign",
+    tag: "Back to School",
+    title: "+51% Units Sold in 14 Days: How We Won the BTS Campaign",
+    excerpt: "+51% Units Sold in 14 Days: How We Won the BTS Campaign",
+    image: "/media/blogs/back-to-school-campaign.png",
+  },
+  {
     slug: "ramadan-preparation",
     tag: "Ramadan Preparation",
     title:

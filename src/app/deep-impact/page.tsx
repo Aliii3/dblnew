@@ -17,7 +17,7 @@ export const metadata = createPageMetadata({
 });
 
 /** Same order the standalone Blogs page used. */
-const BLOG_ORDER = ["ecommerce", "ramadan-preparation", "egypt-dessert-market"];
+const BLOG_ORDER = ["back-to-school-campaign", "ecommerce", "ramadan-preparation", "egypt-dessert-market"];
 
 /** Hidden on this page only — /case-studies still lists the full set. */
 const HIDDEN_SLUGS = new Set(["ltf", "zeina", "raw", "cimento-forca", "wingo"]);

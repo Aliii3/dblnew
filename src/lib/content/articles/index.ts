@@ -1,6 +1,7 @@
 import ecommerce from "./ecommerce.json";
 import ramadanPreparation from "./ramadan-preparation.json";
 import egyptDessertMarket from "./egypt-dessert-market.json";
+import backToSchoolCampaign from "./back-to-school-campaign.json";
 
 export type ArticleSection = {
   heading: string | null;
@@ -11,6 +12,7 @@ const ARTICLES: Record<string, ArticleSection[]> = {
   ecommerce: ecommerce as ArticleSection[],
   "ramadan-preparation": ramadanPreparation as ArticleSection[],
   "egypt-dessert-market": egyptDessertMarket as ArticleSection[],
+  "back-to-school-campaign": backToSchoolCampaign as ArticleSection[],
 };
 
 /** Deduplicate consecutive identical paragraphs from Framer export */

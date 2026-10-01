@@ -12,7 +12,7 @@ export const metadata = createPageMetadata({
   path: "/blogs",
 });
 
-const ORDER = ["ecommerce", "ramadan-preparation", "egypt-dessert-market"];
+const ORDER = ["back-to-school-campaign", "ecommerce", "ramadan-preparation", "egypt-dessert-market"];
 const POSTS = [
   ...ORDER.map((slug) => BLOG_POSTS.find((p) => p.slug === slug)).filter(
     (p): p is (typeof BLOG_POSTS)[number] => Boolean(p),

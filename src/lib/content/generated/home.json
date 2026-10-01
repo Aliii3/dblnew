@@ -104,6 +104,15 @@
   ],
   "blogPosts": [
     {
+      "tag": "Back to School",
+      "title": "+51% Units Sold in 14 Days: How We Won the BTS Campaign",
+      "excerpt": "+51% Units Sold in 14 Days: How We Won the BTS Campaign",
+      "image": "/media/blogs/back-to-school-campaign.png",
+      "slug": "back-to-school-campaign",
+      "isCaseStudy": false,
+      "caseStudySlug": null
+    },
+    {
       "tag": "Ecommerce",
       "title": "From Stage to Backstage: How the Gulf Outpaces Egypt in the E-commerce Play",
       "excerpt": "From Stage to Backstage: How the Gulf Outpaces Egypt in the E-commerce Play",
